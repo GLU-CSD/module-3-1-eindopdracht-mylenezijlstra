@@ -11,7 +11,7 @@
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
-  <meta property="og:image" content=""> 
+  <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -24,41 +24,66 @@
 <body>
 
   <div id="content">
-    <header>header</header>
+    <header>
+
+      <div class="bovenbalk">
+        <div style="display:flex; margin-left:50px; background-color: rgb(213, 225, 255)"> <!--kleur die hetzelde is als de achtergrond-->
+          <div class="menuRight">Taal:</div>
+          <select class="menuLeft" name="Taal" id="Taal">
+            <option value="Nederlands">Nederlands</option> <!--verschillende talen voor de website-->
+            <option value="Duits">Duits</option>
+            <option value="Frans">Frans</option>
+            <option value="Spaans">Spaans</option>
+            <option value="Engels">Engels</option>
+          </select>
+        </div>
+        <div style="display:flex; margin-right:50px; background-color: rgb(213, 225, 255);"> <!--kleur die hetzelde is als de achtergrond-->
+          <div class="menuLeft"><a href="">mijn account</a></div>
+          <div class="menuLeft">|</div>
+          <div class="menuLeft"><a href="">afrekenen</a></div>
+          <div class="menuLeft">|</div>
+          <div class="menuLeft"><a href="">uitloggen</a></div> <!--links die bovenaan de pagina naar andere paginas gaan zoals de inlog pagina etc.-->
+        </div>
+      </div>
+      <div class="onderbalk">onderbalk</div>
+
+    </header>
     <!--in de header komt een grote foto of video te staan die te maken heeft met mijn webshop over sportkleding-->
     <main>
       <div id="sidebar">sidebar</div>
       <div id="products"> <!--dit is de grootste box. Hierin staat het product en alle informatie over het product(sportlegging)-->
 
 
-        
-        <div class="product"> <!--De box waar de foto van mijn product in staat (sportlegging)-->
-          <img src="sportlegginggroen.png" alt="product" /> <!--foto van mijn product (sportlegging)-->
-          <div class="onder">
-            <div class="onderlinks"> 
-              <div>
-                <h3 style="margin-top:10px;">Seamless Leggings</h3> <!--Informatie/naam van het product. Staat links bovenin-->
-              </div>
-              <div>
-                <p>Price: $40</p> <!--Huidige prijs-->
-                <p>Price: $60</p> <!--vorige prijs (moet nog een streep door de prijs)-->
-              </div>
+      <!--sportlegging blauw-->
+      <div class="product"> <!--De box waar de foto van mijn product in staat (sportlegging)-->
+        <img src="assets/img/sportleggingblauw.jpg" alt="product" width="100" height="200" />
+        <!--foto van mijn product (sportlegging)-->
+        <div class="onder">
+          <div class="onderlinks">
+            <div>
+              <h3 style="margin-top:10px;">Seamless Leggings Blue</h3>
+              <!--Informatie/naam van het product. Staat links bovenin-->
             </div>
-            <div class="onderrechts">
-              <button>Add to cart</button> <!--button rechts in het midden-->
+            <div>
+              <p>Price: $40</p> <!--Huidige prijs-->
+              <p>Price: $60</p> <!--vorige prijs (moet nog een streep door de prijs)-->
             </div>
+          </div>
+          <div class="onderrechts">
+            <button>Add to cart</button> <!--button rechts in het midden-->
           </div>
         </div>
       </div>
+  </div>
 
 
   </main>
-<!--in de main komen alle producten te staan-->
+  <!--in de main komen alle producten te staan-->
 
-<footer>
-  footer
-</footer>
-<!--de footer staat onder aan de pagina, hier komt het laatste beetje informatie in te staan-->
+  <footer>
+    footer
+  </footer>
+  <!--de footer staat onder aan de pagina, hier komt het laatste beetje informatie in te staan-->
 
   <script src="assets/js/app.js"></script>
 

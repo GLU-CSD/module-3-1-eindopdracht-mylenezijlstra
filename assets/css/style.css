@@ -1,110 +1,143 @@
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-html,body{
-  width: 100%; /*zorgt dat pagina niet groter is dan beeldscherm*/
-  display: flex; /*zorgt dat pagina mee gaat als de grootte veranderd*/
-  justify-content: center; /*zorgt dat pagina in het midden staat*/
-  background-color: rgb(255, 255, 255); /*achtergrond kleur*/
+html,
+body {
+  width: 100%;
+  /*zorgt dat pagina niet groter is dan beeldscherm*/
+  display: flex;
+  /*zorgt dat pagina mee gaat als de grootte veranderd*/
+  justify-content: center;
+  /*zorgt dat pagina in het midden staat*/
+  background-color: rgb(255, 255, 255);
+  /*achtergrond kleur*/
 }
 
 #products {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 
 }
+
 .product {
   width: 180px;
-  background-color: rgb(255, 255, 255); /*Boarder rondom mijn product*/
+  background-color: rgb(255, 255, 255);
+  /*Boarder rondom mijn product*/
   border-radius: 20px;
-  margin:6px;
-  padding:10px; /*zorgt dat het product niet tegen de rand aan staat maar dat er genoeg ruimte rondom het product is*/
+  margin: 6px;
+  padding: 10px;
+  /*zorgt dat het product niet tegen de rand aan staat maar dat er genoeg ruimte rondom het product is*/
   display: flex;
   flex-direction: column;
 }
 
-.onder{
+.onder {
   display: flex;
   flex-direction: row;
 }
 
-.onderlinks{
+.onderlinks {
   display: flex;
   flex-direction: column;
-  background: rgb(255, 255, 255); /*in deze box staat de informatie van het item. Hierin staat de naam van mijn sportlegging en de prijs*/
+  background: rgb(255, 255, 255);
+  /*in deze box staat de informatie van het item. Hierin staat de naam van mijn sportlegging en de prijs*/
   width: 100%;
   height: 100px;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: left;
 }
-.onderrechts{
+
+.onderrechts {
   display: flex;
   flex-direction: column;
-  background: rgb(255, 255, 255); /*dit is de box waar de button winkerwagen staat*/
-  justify-content: center; /*midden horizontaal*/
-  align-items: center; /*midden vertikaal*/
+  background: rgb(255, 255, 255);
+  /*dit is de box waar de button winkerwagen staat*/
+  justify-content: center;
+  /*midden horizontaal*/
+  align-items: center;
+  /*midden vertikaal*/
 }
 
-.product img{
+.product img {
   width: 100%;
   box-sizing: border-box;
-  background: rgb(45, 76, 113); /*plek waar de foto komt te staan van mijn product*/
+  background: rgb(45, 76, 113);
+  /*plek waar de foto komt te staan van mijn product*/
 }
 
-#content{
-  width:800px;
+#content {
+  width: 800px;
 }
 
 @media only screen and (max-width: 840px) {
   body {
-    background-color: rgb(201, 201, 213); /*kleur zie je niet op scherm*/
+    background-color: rgb(201, 201, 213);
+    /*kleur zie je niet op scherm*/
   }
-  #content{
-    width:600px;
+
+  #content {
+    width: 600px;
   }
-  #sidebar{
+
+  #sidebar {
     display: none;
   }
 }
 
-header{
-  background: rgb(213, 225, 255); /*kleur header (bovenaan de pagina)*/
-  padding: 10px; /*zorgt dat er een extra box is, zodat de taal keuze en de links niet bovenaan de box staan, maar in het midden*/
+header {
+  background: rgb(213, 225, 255);
+  /*kleur header (bovenaan de pagina)*/
+  padding: 10px;
+  /*zorgt dat er een extra box is, zodat de taal keuze en de links niet bovenaan de box staan, maar in het midden*/
 }
-.bovenbalk{
-  background-color: rgb(213, 225, 255); /*achtergrond kleur*/
-  display:flex;
+
+.bovenbalk {
+  background-color: rgb(213, 225, 255);
+  /*achtergrond kleur*/
+  display: flex;
   justify-content: space-between;
 }
-.bovenbalk .menuRight{
-  padding: 10px; /*extra box zodat in het midden staat*/
-}
-.bovenbalk .menuLeft{
-  padding: 10px; /*extra box zodat in het midden staat*/
-}
 
-
-.onderbalk{
-  background-color: rgb(213, 225, 255); /*achtergrond kleur header*/
-  
+.bovenbalk .menuRight {
+  padding: 10px;
+  /*extra box zodat in het midden staat*/
 }
 
-main{
-  background: rgb(255, 255, 255); /*kleur achtergrond van webshop*/
+.bovenbalk .menuLeft {
+  padding: 10px;
+  /*extra box zodat in het midden staat*/
+}
+
+
+.onderbalk {
+  background-color: rgb(213, 225, 255);
+  /*achtergrond kleur*/
+
+}
+
+main {
+  background: rgb(255, 255, 255);
+  /*kleur achtergrond van webshop*/
   display: flex;
   flex-direction: row;
 }
-footer{
-  height:100px;
-  background: rgb(213, 225, 255); /*kleur footer (onder aan de pagina)*/
+
+footer {
+  height: 100px;
+  background: rgb(213, 225, 255);
+  /*kleur footer (onder aan de pagina)*/
 }
-#sidebar{
-  width:200px;
-  background: rgb(228, 228, 228); /*kleur linker zijkant navigatie bar*/
+
+#sidebar {
+  width: 200px;
+  background: rgb(228, 228, 228);
+  /*kleur linker zijkant navigatie bar*/
 }
-#products{
-  width:100%;
-  background: rgb(255, 255, 255); /*kleur main*/
+
+#products {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  /*kleur main*/
 }

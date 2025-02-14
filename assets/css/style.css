@@ -15,7 +15,7 @@ body {
   /*achtergrond kleur*/
 }
 
-#products {
+#products { /*zorgt dat de producten netjes naast elkaar komen te staan en als er geen ruimte meer is dat hij eronder komt te staan*/
   display: flex;
   flex-wrap: wrap;
 
@@ -33,7 +33,7 @@ body {
   flex-direction: column;
 }
 
-.onder {
+.onder { 
   display: flex;
   flex-direction: row;
 }
@@ -67,6 +67,7 @@ body {
   /*plek waar de foto komt te staan van mijn product*/
 }
 
+
 #content {
   width: 800px;
 }
@@ -90,7 +91,6 @@ header {
   background: rgb(213, 225, 255);
   /*kleur header (bovenaan de pagina)*/
   padding: 10px;
-  /*zorgt dat er een extra box is, zodat de taal keuze en de links niet bovenaan de box staan, maar in het midden*/
 }
 
 .bovenbalk {
@@ -102,12 +102,11 @@ header {
 
 .bovenbalk .menuRight {
   padding: 10px;
-  /*extra box zodat in het midden staat*/
+  /*Zodat in het midden staat*/
 }
 
 .bovenbalk .menuLeft {
-  padding: 10px;
-  /*extra box zodat in het midden staat*/
+  padding: 10px;/*ruimte rondom*/
 }
 
 
@@ -117,6 +116,7 @@ header {
 
 }
 
+
 main {
   background: rgb(255, 255, 255);
   /*kleur achtergrond van webshop*/
@@ -125,10 +125,39 @@ main {
 }
 
 footer {
-  height: 100px;
   background: rgb(213, 225, 255);
-  /*kleur footer (onder aan de pagina)*/
+  /*kleur header (bovenaan de pagina)*/
+  padding: 10px;/*ruimte rondom*/
 }
+
+.bovenkant { /*footer informatie*/
+  padding: 10px; /*extra ruimte rondom*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.betalen{
+  padding: 20px;
+}
+
+.informatie{
+  padding: 20px;
+}
+
+.klanten{
+  padding: 20px; 
+}
+
+.levering{
+  padding: 20px;
+}
+
+.onderkant {
+  background-color: rgb(163, 180, 248);
+  padding: 10px; /*ruimte rondom*/
+
+}
+ 
 
 #sidebar {
   width: 200px;

@@ -15,7 +15,50 @@ body {
   /*achtergrond kleur*/
 }
 
-#products { /*zorgt dat de producten netjes naast elkaar komen te staan en als er geen ruimte meer is dat hij eronder komt te staan*/
+/*Hieronder vind je alles in de header tot en met de main*/
+header {
+  background: rgb(213, 225, 255);
+  /*kleur header (bovenaan de pagina)*/
+  padding: 10px;
+}
+
+.bovenbalk {
+  background-color: rgb(213, 225, 255);
+  /*achtergrond kleur*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.bovenbalk .menuRight {
+  padding: 10px;
+  /*Zodat in het midden staat*/
+}
+
+.bovenbalk .menuLeft {
+  padding: 10px;
+  /*ruimte rondom*/
+}
+
+.onderbalk {
+  background-color: rgb(213, 225, 255);
+  /*achtergrond kleur*/
+
+}
+
+.logo {
+  padding: 10px;
+}
+
+/*Hieronder staat alles wat zich in de main bevind tot en met de footer*/
+main {
+  background: rgb(255, 255, 255);
+  /*kleur achtergrond van webshop*/
+  display: flex;
+  flex-direction: row;
+}
+
+#products {
+  /*zorgt dat de producten netjes naast elkaar komen te staan en als er geen ruimte meer is dat hij eronder komt te staan*/
   display: flex;
   flex-wrap: wrap;
 
@@ -33,7 +76,7 @@ body {
   flex-direction: column;
 }
 
-.onder { 
+.onder {
   display: flex;
   flex-direction: row;
 }
@@ -67,7 +110,6 @@ body {
   /*plek waar de foto komt te staan van mijn product*/
 }
 
-
 #content {
   width: 800px;
 }
@@ -87,82 +129,54 @@ body {
   }
 }
 
-header {
-  background: rgb(213, 225, 255);
-  /*kleur header (bovenaan de pagina)*/
-  padding: 10px;
-}
 
-.bovenbalk {
-  background-color: rgb(213, 225, 255);
-  /*achtergrond kleur*/
-  display: flex;
-  justify-content: space-between;
-}
-
-.bovenbalk .menuRight {
-  padding: 10px;
-  /*Zodat in het midden staat*/
-}
-
-.bovenbalk .menuLeft {
-  padding: 10px;/*ruimte rondom*/
-}
-
-
-.onderbalk {
-  background-color: rgb(213, 225, 255);
-  /*achtergrond kleur*/
-
-}
-
-
-main {
-  background: rgb(255, 255, 255);
-  /*kleur achtergrond van webshop*/
-  display: flex;
-  flex-direction: row;
-}
-
+/*Hieronder vind je alles in de footer*/
 footer {
   background: rgb(213, 225, 255);
   /*kleur header (bovenaan de pagina)*/
-  padding: 10px;/*ruimte rondom*/
+  padding: 10px;
+  /*ruimte rondom*/
 }
 
-.bovenkant { /*footer informatie*/
-  padding: 10px; /*extra ruimte rondom*/
+.bovenkant {
+  /*footer informatie*/
+  padding: 10px;
+  /*extra ruimte rondom*/
   display: flex;
   justify-content: space-between;
 }
 
-.betalen{
+.betalen {
   padding: 20px;
 }
 
-.informatie{
+.informatie {
   padding: 20px;
 }
 
-.klanten{
-  padding: 20px; 
-}
-
-.levering{
+.klanten {
   padding: 20px;
 }
 
 .onderkant {
   background-color: rgb(163, 180, 248);
-  padding: 10px; /*ruimte rondom*/
+  padding: 10px;
+  /*ruimte rondom*/
 
 }
- 
 
+/*Hieronder vind je alles voor de sidebar*/
 #sidebar {
   width: 200px;
   background: rgb(228, 228, 228);
   /*kleur linker zijkant navigatie bar*/
+}
+
+.Doosjes {
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
 }
 
 #products {

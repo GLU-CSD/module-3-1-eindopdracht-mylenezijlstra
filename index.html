@@ -30,36 +30,37 @@
 <body>
 
 	<div id="content">
-		<header>
 
-			<div class="bovenbalk">
-				<div style="display:flex; margin-left:50px; background-color: rgb(213, 225, 255)">
-					<!--kleur die hetzelde is als de achtergrond-->
-					<div class="menuRight">Taal:</div>
-					<select class="menuLeft" name="Taal" id="Taal">
-						<option value="Nederlands">Nederlands</option> <!--verschillende talen voor de website-->
-						<option value="Duits">Duits</option>
-						<option value="Frans">Frans</option>
-						<option value="Spaans">Spaans</option>
-						<option value="Engels">Engels</option>
-					</select>
-				</div>
-				<div style="display:flex; margin-right:50px; background-color: rgb(213, 225, 255);">
-					<!--kleur die hetzelde is als de achtergrond-->
-					<div class="menuLeft"><a href="">mijn account</a></div>
-					<div class="menuLeft">|</div>
-					<div class="menuLeft"><a href="">afrekenen</a></div>
-					<div class="menuLeft">|</div>
-					<div class="menuLeft"><a href="">uitloggen</a></div>
-					<!--links die bovenaan de pagina naar andere paginas gaan zoals de inlog pagina etc.-->
-				</div>
+		<div class="bovenbalk">
+			<div style="display:flex; margin-left:50px; background-color: rgb(163, 180, 248)">
+				<!--kleur die hetzelde is als de achtergrond-->
+				<div class="menuRight">Taal:</div>
+				<select class="menuLeft" name="Taal" id="Taal">
+					<option value="Nederlands">Nederlands</option> <!--verschillende talen voor de website-->
+					<option value="Duits">Duits</option>
+					<option value="Frans">Frans</option>
+					<option value="Spaans">Spaans</option>
+					<option value="Engels">Engels</option>
+				</select>
 			</div>
+			<div style="display:flex; margin-right:50px; background-color: rgb(163, 180, 248);">
+				<!--kleur die hetzelde is als de achtergrond-->
+				<div class="menuLeft"><a href="">mijn account</a></div>
+				<div class="menuLeft">|</div>
+				<div class="menuLeft"><a href="">afrekenen</a></div>
+				<div class="menuLeft">|</div>
+				<div class="menuLeft"><a href="">uitloggen</a></div>
+				<!--links die bovenaan de pagina naar andere paginas gaan zoals de inlog pagina etc.-->
+			</div>
+		</div>
+
+		<header>
 			<div class="onderbalk">
 
 				<div> <!--Buitenste box-->
 
 					<div class="logo"> <!--De box waar logo in te zien is-->
-						hello world<img src="assets/img/logo1.jpg" alt="logo" />
+						<img src="assets/img/logo1.jpg" alt="logo" />
 					</div>
 
 				</div><!--Buitenste box-->
@@ -109,7 +110,7 @@
 					<div>button versturen</div>
 				</div>
 
-				
+
 				<div class="Doosjes">
 					<h3>Producten vergelijken</h3> <br>
 					<div>x <a href="">Legging</a></div>
@@ -119,6 +120,24 @@
 			</div>
 
 			<div id="products">
+
+				<div class="lijn">
+
+					<div style="display:flex; margin-left:0px; background-color: rgb(255, 255, 255)">
+						<!--kleur die hetzelde is als de achtergrond-->
+						<div class="mainRight">Selecteer op naam: </div>
+						<select class="mainLeft" name="Taal" id="Taal">
+							<option value="Sportlegging">Sportlegging</option>
+							<!--verschillende talen voor de website-->
+							<option value="Sport Bh">Sport Bh</option>
+							<option value="Shirts">Shirts</option>
+							<option value="Joggers">Joggers</option>
+						</select>
+					</div>
+					<br>
+					<div style="margin-left:10px;">  21 artikele(n)</div>
+					____________________________________________________________________________
+				</div>
 				<!--dit is de grootste box. Hierin staat het product en alle informatie over het product(sportlegging)-->
 
 				<!--sportlegging blauw-->
@@ -582,6 +601,10 @@
 						</div>
 					</div>
 				</div>
+				<div class="lijn">
+					<div style="margin-left:10px;">21 artikele(n)</div>
+					____________________________________________________________________________
+				</div>
 
 			</div> <!--Alle 21 producten met beschrijving en foto-->
 
@@ -592,39 +615,35 @@
 
 			<!--Als extra tijd over is deze mooi centreren-->
 
-			<div class="bovenkant"> <!--bovenste deel van de footer-->
-				<div style="display:flex; margin-right:50px; background-color: rgb(213, 225, 255);">
+			<div class="bovenkant">
+				<div class="betalen">
+					<h3>Veilig betalen</h3> <br>
+					<div>Betaal in </div>
+					<div>alle veiligheid</div>
+					<div>met onze </div>
+					<div>partners</div>
+				</div>
 
-					<div class="betalen"> <!--tekst over betalen-->
-						<h3>Veilig betalen</h3> <br>
-						<div>Betaal in alle veiligheid</div>
-						<div>met onze partners</div>
-					</div>
+				<div class="klanten">
+					<ul>
+						<h3>Klantenservice</h3> <br>
+						<li>Wachtwoord vergeten</li>
+						<li>Veilige betaling</li>
+						<li>Levering</li>
+						<li>Retouneren</li>
+					</ul>
+				</div>
 
-					<div style="display:flex; margin-right:50px; background-color: rgb(213, 225, 255);">
-
-						<div class="klanten">
-							<h3>Klantenservice</h3> <br>
-							<lu>
-								<li>Wachtwoord vergeten</li> <!--list over de klantenservice-->
-								<li>Veilige betaling</li>
-								<li>Levering</li>
-								<li>Retouneren</li>
-							</lu>
-						</div>
-
-						<div style="display:flex; margin-right:50px; background-color: rgb(213, 225, 255);">
-							<lu>
-								<div class="informatie"> <!--list met informatie-->
-									<h3>Over ons</h3> <br>
-									<li>Over ons</li>
-									<li>Contact informatie</li>
-									<li>Algemene voorwaarden</li>
-									<li>Privicy beleid</li>
-								</div>
-							</lu>
-						</div>
-					</div>
+				<div class="informatie">
+					<ul>
+						<h3>Over ons</h3> <br>
+						<li>Over ons</li>
+						<li>Contact informatie</li>
+						<li>Algemene voorwaarden</li>
+						<li>Privacy beleid</li>
+					</ul>
+				</div>
+			</div>
 
 		</footer>
 

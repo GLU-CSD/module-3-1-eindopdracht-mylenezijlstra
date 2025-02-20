@@ -23,14 +23,16 @@ header {
 }
 
 .bovenbalk {
-  background-color: rgb(213, 225, 255);
+  background-color: rgb(163, 180, 248);
   /*achtergrond kleur*/
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .bovenbalk .menuRight {
   padding: 10px;
+  
   /*Zodat in het midden staat*/
 }
 
@@ -39,15 +41,41 @@ header {
   /*ruimte rondom*/
 }
 
+.mainLeft {
+  padding: 10px;
+}
+.mainRight {
+  padding: 10px;
+}
+
 .onderbalk {
   background-color: rgb(213, 225, 255);
   /*achtergrond kleur*/
 
 }
 
-.logo {
-  padding: 10px;
+/* Zorg ervoor dat het logo kleiner wordt */
+.logo img {
+  max-width: 100px;
+  /* Stel de maximale breedte van het logo in (je kunt de waarde aanpassen naar wens) */
+  height: auto;
+  /* Zorg ervoor dat de hoogte proportioneel is */
+  display: block;
+  /* Verwijdert eventuele ruimte onder het plaatje */
 }
+
+/* Zorg ervoor dat de logo container naar links wordt gepositioneerd */
+.logo {
+  display: flex;
+  align-items: center;
+  /* Zorg ervoor dat het logo verticaal in het midden staat */
+  justify-content: flex-start;
+  /* Zorg ervoor dat het logo aan de linkerkant komt */
+  padding: 10px;
+  margin: 10px;
+  /* Ruimte rondom het logo */
+}
+
 
 /*Hieronder staat alles wat zich in de main bevind tot en met de footer*/
 main {
@@ -55,6 +83,10 @@ main {
   /*kleur achtergrond van webshop*/
   display: flex;
   flex-direction: row;
+}
+
+.lijn{
+  margin: 20px;
 }
 
 #products {
@@ -111,7 +143,7 @@ main {
 }
 
 #content {
-  width: 800px;
+  width: 829px;
 }
 
 @media only screen and (max-width: 840px) {
@@ -133,29 +165,32 @@ main {
 /*Hieronder vind je alles in de footer*/
 footer {
   background: rgb(213, 225, 255);
-  /*kleur header (bovenaan de pagina)*/
   padding: 10px;
-  /*ruimte rondom*/
+  width: 100%;
+  /* Zorg ervoor dat de footer zelf 100% breedte heeft */
+  box-sizing: border-box;
+  /* Zorg ervoor dat padding wordt meegerekend in de totale breedte */
 }
 
 .bovenkant {
-  /*footer informatie*/
+  margin: 0;
+  /* Verwijder eventueel marge */
   padding: 10px;
-  /*extra ruimte rondom*/
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.betalen {
-  padding: 20px;
-}
-
-.informatie {
-  padding: 20px;
-}
-
+.betalen,
+.informatie,
 .klanten {
-  padding: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Zorg ervoor dat de items in de columns ook gecentreerd zijn */
+  align-items: center;
 }
 
 .onderkant {
@@ -167,7 +202,7 @@ footer {
 
 /*Hieronder vind je alles voor de sidebar*/
 #sidebar {
-  width: 200px;
+  width: 250px;
   background: rgb(228, 228, 228);
   /*kleur linker zijkant navigatie bar*/
 }

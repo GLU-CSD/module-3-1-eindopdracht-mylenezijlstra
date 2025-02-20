@@ -120,6 +120,30 @@ header {
   /* Geef het logo een vaste breedte zodat het aan de linkerkant blijft */
 }
 
+/* Zorg ervoor dat het logo kleiner wordt */
+.winkel img {
+  max-width: 50px;
+  /* Stel de maximale breedte van het logo in (je kunt de waarde aanpassen naar wens) */
+  height: auto;
+  /* Zorg ervoor dat de hoogte proportioneel is */
+  display: block;
+  /* Verwijdert eventuele ruimte onder het plaatje */
+}
+
+/* Zorg ervoor dat logo naar links wordt gepositioneerd */
+.winkel {
+  display: flex;
+  justify-content: flex-end;
+  /* Verplaatst naar de rechterkant */
+  align-items: center;
+  /* Zorg ervoor dat de afbeelding verticaal gecentreerd is */
+  position: absolute;
+  right: 10px;
+  /* Zet de container helemaal naar de rechterkant van de parent */
+  top: 50%;
+  transform: translateY(-50%);
+  /*lijn code van internet afgehaald, omdat niks werkte en in de foto niet aan de rechterkant kreeg*/
+}
 
 /*Hieronder staat alles wat zich in de main bevind tot en met de footer*/
 main {

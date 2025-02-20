@@ -32,7 +32,7 @@ header {
 
 .bovenbalk .menuRight {
   padding: 10px;
-  
+
   /*Zodat in het midden staat*/
 }
 
@@ -44,6 +44,7 @@ header {
 .mainLeft {
   padding: 10px;
 }
+
 .mainRight {
   padding: 10px;
 }
@@ -51,8 +52,53 @@ header {
 .onderbalk {
   background-color: rgb(213, 225, 255);
   /*achtergrond kleur*/
+  display: flex;
+  justify-content: space-between;
+  /* Verdeel de ruimte tussen logo en nav */
+  align-items: center;
+  padding: 10px;
+  position: relative;
 
 }
+
+/* Styling voor de navigatiebalk */
+.navbar {
+  position: absolute;
+  /* Navbalk absoluut ten opzichte van de onderbalk */
+  left: 50%;
+  /* Zet de navbar in het midden van de onderbalk */
+  transform: translateX(-50%);
+  /* Verplaatst de nav precies naar het midden */
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin: 15px;
+  /* Ruimte tussen de links */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  /* Zet hier je gewenste kleur voor de tekst */
+  font-size: 20px;
+  /* Stel de grootte van de tekst in */
+  font-weight: bold;
+  /* Je kunt dit aanpassen voor dikker lettertype */
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #0056b3;
+  /* Kleur veranderen bij hover */
+}
+
 
 /* Zorg ervoor dat het logo kleiner wordt */
 .logo img {
@@ -67,13 +113,11 @@ header {
 /* Zorg ervoor dat de logo container naar links wordt gepositioneerd */
 .logo {
   display: flex;
-  align-items: center;
-  /* Zorg ervoor dat het logo verticaal in het midden staat */
   justify-content: flex-start;
-  /* Zorg ervoor dat het logo aan de linkerkant komt */
-  padding: 10px;
-  margin: 10px;
-  /* Ruimte rondom het logo */
+  /* Zorg ervoor dat het logo links blijft */
+  align-items: center;
+  width: 200px;
+  /* Geef het logo een vaste breedte zodat het aan de linkerkant blijft */
 }
 
 
@@ -85,7 +129,7 @@ main {
   flex-direction: row;
 }
 
-.lijn{
+.lijn {
   margin: 20px;
 }
 

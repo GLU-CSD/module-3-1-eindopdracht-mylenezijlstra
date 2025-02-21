@@ -145,6 +145,76 @@ header {
   /*lijn code van internet afgehaald, omdat niks werkte en in de foto niet aan de rechterkant kreeg*/
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search-container {
+  display: flex;
+  width: 100%;
+  box-shadow: 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+  flex-grow: 1; /* Zorgt ervoor dat de input de beschikbare ruimte opvult */
+  height: 20px; /* Dit maakt de zoekbalk verticaal dun */
+}
+
+
+.search-input:focus {
+  border-color: #007BFF;
+}
+
+
+.search-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: center; /* Zorg ervoor dat de knop dezelfde hoogte heeft als de input */
+}
+
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Hieronder staat alles wat zich in de main bevind tot en met de footer*/
 main {
   background: rgb(255, 255, 255);
@@ -165,7 +235,7 @@ main {
 }
 
 .product {
-  width: 180px;
+  width: 185px;
   background-color: rgb(255, 255, 255);
   /*Boarder rondom mijn product*/
   border-radius: 20px;
@@ -270,7 +340,7 @@ footer {
 
 /*Hieronder vind je alles voor de sidebar*/
 #sidebar {
-  width: 250px;
+  width: 178px;
   background: rgb(228, 228, 228);
   /*kleur linker zijkant navigatie bar*/
 }
@@ -325,7 +395,7 @@ justify-content: right;
 }
 
 .Doosjes {
-  padding: 30px;
+  padding: 10px;
   margin: 20px;
   border-style: solid;
   border-color: black;
@@ -335,4 +405,8 @@ justify-content: right;
   width: 100%;
   background: rgb(255, 255, 255);
   /*kleur main*/
+}
+
+.prijsslider{
+  width: 115px;
 }

@@ -99,7 +99,6 @@ header {
   /* Kleur veranderen bij hover */
 }
 
-
 /* Zorg ervoor dat het logo kleiner wordt */
 .logo img {
   max-width: 100px;
@@ -145,25 +144,11 @@ header {
   /*lijn code van internet afgehaald, omdat niks werkte en in de foto niet aan de rechterkant kreeg*/
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .search-container {
   display: flex;
   width: 100%;
   box-shadow: 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .search-input {
   padding: 10px;
@@ -174,11 +159,9 @@ header {
   height: 20px; /* Dit maakt de zoekbalk verticaal dun */
 }
 
-
 .search-input:focus {
   border-color: #007BFF;
 }
-
 
 .search-button {
   padding: 10px 15px;
@@ -194,26 +177,6 @@ header {
 .search-button:hover {
   background-color: #0056b3;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Hieronder staat alles wat zich in de main bevind tot en met de footer*/
 main {
@@ -299,7 +262,6 @@ main {
   }
 }
 
-
 /*Hieronder vind je alles in de footer*/
 footer {
   background: rgb(213, 225, 255);
@@ -335,7 +297,6 @@ footer {
   background-color: rgb(163, 180, 248);
   padding: 10px;
   /*ruimte rondom*/
-
 }
 
 /*Hieronder vind je alles voor de sidebar*/

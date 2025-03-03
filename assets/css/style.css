@@ -155,8 +155,10 @@ header {
   font-size: 16px;
   border: 1px solid #ccc;
   outline: none;
-  flex-grow: 1; /* Zorgt ervoor dat de input de beschikbare ruimte opvult */
-  height: 20px; /* Dit maakt de zoekbalk verticaal dun */
+  flex-grow: 1;
+  /* Zorgt ervoor dat de input de beschikbare ruimte opvult */
+  height: 20px;
+  /* Dit maakt de zoekbalk verticaal dun */
 }
 
 .search-input:focus {
@@ -170,7 +172,8 @@ header {
   color: white;
   border: none;
   cursor: pointer;
-  height: center; /* Zorg ervoor dat de knop dezelfde hoogte heeft als de input */
+  height: center;
+  /* Zorg ervoor dat de knop dezelfde hoogte heeft als de input */
 }
 
 
@@ -311,12 +314,12 @@ footer {
   justify-content: space-between;
 }
 
-.prijslaag{
-justify-content: left;
+.prijslaag {
+  justify-content: left;
 }
 
-.prijshoog{
-justify-content: right;
+.prijshoog {
+  justify-content: right;
 }
 
 .slidecontainer {
@@ -368,6 +371,6 @@ justify-content: right;
   /*kleur main*/
 }
 
-.prijsslider{
+.prijsslider {
   width: 115px;
 }

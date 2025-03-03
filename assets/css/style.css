@@ -303,7 +303,7 @@ footer {
 }
 
 /*Hieronder vind je alles voor de sidebar*/
-#sidebar {
+#sidebar { 
   width: 178px;
   background: rgb(228, 228, 228);
   /*kleur linker zijkant navigatie bar*/

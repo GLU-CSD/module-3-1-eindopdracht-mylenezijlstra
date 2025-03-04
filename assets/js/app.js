@@ -7,7 +7,7 @@ if (localStorage.getItem("productCount")) {
   localStorage.setItem("productCount", 0);
 }
 
-document.getElementById("winkelmandItems").innerHTML = productCount;
+document.getElementById("winkelwagenbolletje").innerHTML = productCount;
 
 function winkelWagenAdd() {
   productCount = Number(productCount) + 1;

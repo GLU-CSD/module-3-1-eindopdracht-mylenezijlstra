@@ -11,6 +11,6 @@ document.getElementById("winkelwagenbolletje").innerHTML = productCount;
 
 function winkelWagenAdd() {
   productCount = Number(productCount) + 1;
-  localStorage.setItem("productCount", 0);
+  localStorage.setItem("productCount", productCount);
   document.getElementById("winkelwagenbolletje").innerHTML = productCount;
 }

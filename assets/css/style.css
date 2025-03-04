@@ -13,6 +13,7 @@ body {
   /*zorgt dat pagina in het midden staat*/
   background-color: rgb(255, 255, 255);
   /*achtergrond kleur*/
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*Hieronder vind je alles in de header tot en met de main*/
@@ -190,6 +191,13 @@ main {
 
 .lijn {
   margin: 20px;
+  width:100%;
+}
+
+.lijnen{
+  border: 1px solid black;
+  width: 100%;
+  
 }
 
 #products {

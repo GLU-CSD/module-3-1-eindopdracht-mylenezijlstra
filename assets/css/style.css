@@ -145,6 +145,7 @@ header {
 }
 
 .bolletje {
+  color:white;
   width: 20px; /* Grootte van het bolletje */
   height: 20px; /* Grootte van het bolletje */
   border-radius: 50%; /* Maakt het bolletje rond */

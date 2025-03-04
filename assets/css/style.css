@@ -144,6 +144,18 @@ header {
   /*lijn code van internet afgehaald, omdat niks werkte en in de foto niet aan de rechterkant kreeg*/
 }
 
+.bolletje {
+  width: 20px; /* Grootte van het bolletje */
+  height: 20px; /* Grootte van het bolletje */
+  border-radius: 50%; /* Maakt het bolletje rond */
+  background-color: rgb(223, 0, 0); /* Kleur van het bolletje */
+  position: absolute; /* Absolute positionering */
+  right: 0; /* Plaatst het bolletje aan de rechterkant van het scherm */
+  top: 25%; /* Verticaal centreren */
+  transform: translateY(-50%); /* Corrigeert de positie zodat het bolletje perfect in het midden zit */
+}
+
+
 .search-container {
   display: flex;
   width: 100%;

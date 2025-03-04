@@ -13,7 +13,7 @@ body {
   /*zorgt dat pagina in het midden staat*/
   background-color: rgb(255, 255, 255);
   /*achtergrond kleur*/
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*Hieronder vind je alles in de header tot en met de main*/
@@ -145,17 +145,26 @@ header {
 }
 
 .bolletje {
-  color:white;
+  color: white;
   justify-content: center;
   display: flex;
-  width: 20px; /* Grootte van het bolletje */
-  height: 20px; /* Grootte van het bolletje */
-  border-radius: 50%; /* Maakt het bolletje rond */
-  background-color: rgb(223, 0, 0); /* Kleur van het bolletje */
-  position: absolute; /* Absolute positionering */
-  right: 0; /* Plaatst het bolletje aan de rechterkant van het scherm */
-  top: 25%; /* Verticaal centreren */
-  transform: translateY(-50%); /* Corrigeert de positie zodat het bolletje perfect in het midden zit */
+  /*de bovenste 3 regels code zijn voor het stijlen van de cijfers in het bolletje*/
+  width: 20px;
+  /* Grootte van het bolletje */
+  height: 20px;
+  /* Grootte van het bolletje */
+  border-radius: 50%;
+  /* Maakt het bolletje rond */
+  background-color: rgb(223, 0, 0);
+  /* Kleur van het bolletje */
+  position: absolute;
+  /* Absolute positionering */
+  right: 0;
+  /* Plaatst het bolletje aan de rechterkant van het scherm */
+  top: 25%;
+  /* Verticaal centreren */
+  transform: translateY(-50%);
+  /* Corrigeert de positie zodat het bolletje perfect in het midden zit */
 }
 
 
@@ -206,13 +215,13 @@ main {
 
 .lijn {
   margin: 20px;
-  width:100%;
+  width: 100%;
 }
 
-.lijnen{
+.lijnen {
   border: 1px solid black;
   width: 100%;
-  
+
 }
 
 #products {
@@ -325,7 +334,7 @@ footer {
 }
 
 /*Hieronder vind je alles voor de sidebar*/
-#sidebar { 
+#sidebar {
   width: 178px;
   background: rgb(228, 228, 228);
   /*kleur linker zijkant navigatie bar*/

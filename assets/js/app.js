@@ -8,12 +8,12 @@ if (localStorage.getItem("productCount")) {
 }
 
 document.getElementById("winkelwagenbolletje").innerHTML = productCount;
+  //als je voor alle wilt blijven doortellen (standaard) vul in productCount
+  //als je naar nul wilt vervang productCount met 0
 
 function winkelWagenAdd() {
   productCount = Number(productCount) + 1;
   localStorage.setItem("productCount", productCount); 
-  //als je voor alle wilt blijven doortellen (standaard) vul in productCount
-  //als je naar nul wilt vervang productCount met 0
   document.getElementById("winkelwagenbolletje").innerHTML = productCount;
 }
 //deze regels code zijn voor local stoarge. 

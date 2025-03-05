@@ -405,3 +405,24 @@ footer {
 .prijsslider {
   width: 115px;
 }
+
+/*hieronder komt alles voor het bestel formulier*/
+
+.gegevens{
+  padding: 20px;
+  margin: 20px;
+}
+
+.aanhef {
+  display: flex;
+  justify-content: space-between; /* Verdeel de ruimte gelijkmatig tussen de items */
+  align-items: center; /* Zorg dat de items verticaal gecentreerd zijn */
+}
+
+.aanhef input {
+  margin-left: 20px; /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
+}
+
+.aanhef label {
+  margin-left: 5px; /* Optionele marge voor de labels */
+}

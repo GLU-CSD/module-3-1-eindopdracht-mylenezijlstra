@@ -426,3 +426,52 @@ footer {
 .aanhef label {
   margin-left: 5px; /* Optionele marge voor de labels */
 }
+
+.small-input {
+  width: 150px; /* De breedte van het inputveld */
+  padding: 5px; /* De ruimte binnenin het inputveld */
+  font-size: 14px; /* De grootte van de tekst */
+  border: 1px solid #ccc; /* Een lichte rand */
+  border-radius: 4px; /* Ronde hoeken voor het inputveld */
+}
+
+.naam {
+  display: flex;
+  justify-content: space-between; /* Verdeel de ruimte gelijkmatig tussen de items */
+  align-items: center; /* Zorg dat de items verticaal gecentreerd zijn */
+}
+
+.naam input {
+  margin-left: 20px; /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
+}
+
+.naam label {
+  margin-left: 5px; /* Optionele marge voor de labels */
+}
+
+.wonen {
+  display: flex;
+  justify-content: space-between; /* Verdeel de ruimte gelijkmatig tussen de items */
+  align-items: center; /* Zorg dat de items verticaal gecentreerd zijn */
+}
+
+.wonen input {
+  margin-left: 20px; /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
+}
+
+.wonen label {
+  margin-left: 5px; /* Optionele marge voor de labels */
+}
+
+.land{
+  padding: 6px;
+  border-radius: 4px;
+  width: 160px;
+  border: 1px solid #ccc
+}
+
+.mail{
+  padding: 6px;
+  width: 160px;
+}
+

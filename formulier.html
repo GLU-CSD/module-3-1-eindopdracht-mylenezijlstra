@@ -75,21 +75,75 @@
         </header>
 
         <main>
-            <div class="gegevens">
-                <h2>Vul hier uw gegevens in</h2> <br> <br>
-            
 
-                <div class="aanhef">
-                    Aanhef
-                    <input type="checkbox" value="Dhr.">
-                    <label> Dhr.</label>
-                    <input type="checkbox" value="Mevr.">
-                    <label> Mevr.</label>
-                    <input type="checkbox" value="Anders">
-                    <label> Anders</label>
+            <form>
+                <div class="gegevens">
+                    <h2>Vul hier uw gegevens in</h2> <br> <br> <br>
+
+                    <div class="aanhef">
+                        Aanhef:
+                        <input type="radio" name="aanhef" value="Dhr.">
+                        <label for="Dhr"> Dhr.</label>
+
+                        <input type="radio" name="aanhef" value="Mevr.">
+                        <label for="Mevr"> Mevr.</label>
+
+                        <input type="radio" name="aanhef" value="Anders">
+                        <label for="Anders"> Anders</label>
+                    </div>
+                    <br>
+
+
+                    <div class="naam">
+                        Namen
+                        <input type="text" placeholder="Voornaam" class="small-input" required />
+                        <input type="text" placeholder="Tussenv." class="small-input" />
+                        <input type="text" placeholder="Achternaam" class="small-input" required />
+                    </div><br>
+
+                    <div class="wonen">
+                        Huisnummer
+                        <input type="text" placeholder="Nr." class="small-input" required />
+                        <input type="text" placeholder="Toev." class="small-input" required />
+                    </div> <br>
+
+                    <div class="wonen">
+                        Postcode
+                        <input type="text" placeholder="1234AB" class="small-input" required />
+                    </div> <br>
+
+                    <div class="wonen">
+                        Land:
+                        <select class="land" name="Land" id="Land">
+                            <option value="Nederlands">Nederland</option>
+                            <!--verschillende talen voor de website-->
+                            <option value="Duits">Duitsland</option>
+                            <option value="Frans">Frankrijk</option>
+                            <option value="Spaans">Spanje</option>
+                            <option value="Engels">Engeland</option>
+                        </select>
+                    </div> <br>
+
+                    <div class="wonen">
+                        E-mail
+                        <input type="text" class="small-input" required />
+                    </div> <br>
+
+                    <div class="wonen">
+                        Telefoonnummer
+                        <input type="text" placeholder="(06)" class="small-input" required />
+                    </div> <br>
+
+                    <div class="wonen">
+                        Geboortedatum
+                        <input type="text" placeholder="dd-mm-jjjj" class="small-input" required />
+                    </div> <br>
+
+                    <button type="submit">Verzenden</button>
+
+
                 </div>
-
-        </div>
+            </form>
 
 
 

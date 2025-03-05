@@ -475,3 +475,10 @@ footer {
   width: 160px;
 }
 
+.verzenden{
+  padding: 6px;
+  border-radius: 4px;
+  width: 100px;
+  border: 1px solid #000000 
+}
+

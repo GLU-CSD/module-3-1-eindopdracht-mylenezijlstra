@@ -136,7 +136,7 @@
 
                     <div class="wonen">
                         Huisnummer
-                        <input type="text" id="huisnmr" name="huisnmr" placeholder="12" onfocus="resetForm();">
+                        <input type="text" id="Huisnummer" name="Huisnummer" placeholder="12" onfocus="resetForm();">
 
                         <div id="alertBijhuisnmr" style="color: red"></div>
 
@@ -255,11 +255,11 @@
                     }
 
                     ///---------
-                    let huisnmr = document.forms["mijnFormulier"]["huisnmr"].value;
-                    if (huisnmr == "") {
+                    let Huisnummer = document.forms["mijnFormulier"]["Huisnummer"].value;
+                    if (Huisnummer == "") {
                         //alert("Name must be filled out");
                         document.getElementById("alertBijhuisnmr").innerHTML =
-                            "huisnmr moet ingevuld worden.";
+                            "Huisnummer moet ingevuld worden.";
                         return false;
                     }
 

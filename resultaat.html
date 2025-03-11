@@ -42,7 +42,7 @@
             </div>
             <div style="display:flex; margin-right:50px; background-color: rgb(163, 180, 248);">
                 <!--kleur die hetzelde is als de achtergrond-->
-                <div class="menuLeft"><a href="formulier.html">mijn account</a></div>
+                <div class="menuLeft"><a href="resultaat.html">mijn gegevens</a></div>
                 <div class="menuLeft">|</div>
                 <div class="menuLeft"><a href="formulier.html">inloggen</a></div>
                 <div class="menuLeft">|</div>
@@ -85,7 +85,12 @@
 
         </header>
 
-        <div id="resultaat">
+        <div class="gegeven">
+
+            <h2>Uw gegevens</h2> <br>
+            <div class="lijnen"></div><br> <br> <br>
+
+            <div id="resultaat"> </div>
 
             <script>
                 // Haal de queryparameters op uit de URL
@@ -98,12 +103,14 @@
 
                 // Vul de inhoud van het element met ID "resultaat" in
                 document.getElementById("resultaat").innerHTML =
-                    "Voornaam: " + voornaam +
-                    "<br>Achternaam: " + achternaam +
-                    "<br>Huisnummer: " + Huisnummer + // Zorg dat de variabele correct is
-                    "<br>Email: " + email;
+                    "Voornaam: " + voornaam + 
+                    "<br><br>Achternaam: " + achternaam +
+                    "<br><br>Huisnummer: " + Huisnummer + // Zorg dat de variabele correct is
+                    "<br><br>Email: " + email;
             </script>
 
+            <br> <br> <br>
+            <div class="lijnen"></div>
         </div>
 
         <footer>

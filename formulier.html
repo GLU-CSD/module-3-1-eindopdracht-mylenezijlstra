@@ -48,7 +48,7 @@
             </div>
             <div style="display:flex; margin-right:50px; background-color: rgb(163, 180, 248);">
                 <!--kleur die hetzelde is als de achtergrond-->
-                <div class="menuLeft"><a href="formulier.html">mijn account</a></div>
+                <div class="menuLeft"><a href="resultaat.html">mijn gegevens</a></div>
                 <div class="menuLeft">|</div>
                 <div class="menuLeft"><a href="formulier.html">inloggen</a></div>
                 <div class="menuLeft">|</div>
@@ -123,7 +123,7 @@
                         <div id="alertBijNaam" style="color: red"></div>
 
 
-                        <input type="text" id="tussenv." name="tussenv." placeholder="tussenv." onfocus="resetForm();">
+                        <input type="text" id="tussenv" name="tussenv" placeholder="tussenv." onfocus="resetForm();">
 
                         <input type="text" id="achternaam" name="achternaam" placeholder="achternaam"
                             onfocus="resetForm();">
@@ -205,9 +205,11 @@
                     </div> <br>
                     <!--code geboortedatum-->
 
-                    <input type="checkbox" value="Ik ga acort met de algemene voorwaarden">
+                    <input type="checkbox" value="Ik ga acort met de algemene voorwaarden" id="checkbox1">
                     <label> Ik ga akkoord met de <a href="">algemene voorwaarden</a>
-                    </label> <br> <br>
+                    </label>
+                    <div id="alertBijCheckbox" style="color: red"></div>
+                    <br> <br>
                     <!--code checkbox-->
 
                     <input type="submit" value="Submit" class="verzenden"> <br> <br> <br>
@@ -228,11 +230,6 @@
                     document.getElementById("alertBijTelefoon").innerHTML = "";
                     document.getElementById("alertBijDatum").innerHTML = "";
                 }
-
-
-
-
-
 
                 function validateForm() {
                     console.log("validateForm");
@@ -313,6 +310,15 @@
                         return false;
                         ///---------
                     }
+                    let checkbpxchecked = document.getElementById("checkbox1").checked;
+                    if (checkbpxchecked == false) {
+                        //alert("Name must be filled out");
+                        document.getElementById("alertBijCheckbox").innerHTML =
+                            "Algemene voorwaarden accepteren.";
+                        return false;
+                        ///---------
+                    }
+
 
                 }
             </script>

@@ -96,6 +96,7 @@
                 // Haal de queryparameters op uit de URL
                 let url = new URL(window.location.href);
 
+                let aanhef = url.searchParams.get("aanhef");
                 let voornaam = url.searchParams.get("voornaam");
                 let tussenv = url.searchParams.get("tussenv");
                 let achternaam = url.searchParams.get("achternaam");
@@ -104,23 +105,23 @@
                 let postcode = url.searchParams.get("Postcode");
                 let Telefoonnummer = url.searchParams.get("Telefoonnummer");
                 let email = url.searchParams.get("email");
-                let Datum = url.searchParams.get("Geboortedatum");
-
-                
+                let Datum = url.searchParams.get("Datum");
+                let land = url.searchParams.get("Land");
 
                 // Vul de inhoud van het element met ID "resultaat" in
                 document.getElementById("resultaat").innerHTML =
-                    "Voornaam: " + voornaam + 
+
+                    "Aanhef: " + aanhef +
+                    "<br><br>Voornaam: " + voornaam +
                     "<br><br>Tussenvoegsel: " + tussenv +
                     "<br><br>Achternaam: " + achternaam +
                     "<br><br>Huisnummer: " + Huisnummer +
-                    "<br><br>Straatnaam: " + toev +  
-                    "<br><br>Postcode: " + postcode + 
+                    "<br><br>Straatnaam: " + toev +
+                    "<br><br>Postcode: " + postcode +
+                    "<br><br>Land: " + land +
                     "<br><br>Email: " + email +
                     "<br><br>Telefoonnummer: " + Telefoonnummer +
-                    "<br><br>Geboortedatum: " + Datum
-
-                    ;
+                    "<br><br>Geboortedatum: " + Datum;
             </script>
 
             <br> <br> <br>

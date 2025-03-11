@@ -101,7 +101,7 @@
 
                     <div class="aanhef">
                         Aanhef:
-                        <input type="radio" name="aanhef" value="Dhr.">
+                        <input type="radio" name="aanhef" value="Dhr." checked>
                         <label> Dhr.</label>
 
                         <input type="radio" name="aanhef" value="Mevr.">
@@ -153,8 +153,7 @@
                     <div class="wonen">
                         Postcode
 
-                        <input type="text" id="postcode" name="postcode" placeholder="1234AB"
-                            onfocus="resetForm();">
+                        <input type="text" id="postcode" name="postcode" placeholder="1234AB" onfocus="resetForm();">
 
                         <div id="alertBijPostcode" style="color: red"></div>
 
@@ -198,8 +197,7 @@
                         Geboortedatum
 
 
-                        <input type="text" id="Datum" name="Datum" placeholder="dd-mm-jjjj"
-                            onfocus="resetForm();">
+                        <input type="text" id="Datum" name="Datum" placeholder="dd-mm-jjjj" onfocus="resetForm();">
 
                         <div id="alertBijDatum" style="color: red"></div>
                     </div> <br>
@@ -232,6 +230,18 @@
                 }
 
                 function validateForm() {
+
+                    function validateForm() {
+                        // Haal de geselecteerde aanhef op
+                        let aanhef = document.querySelector('input[name="aanhef"]:checked').value;
+
+                        // Voeg de aanhef toe aan de querystring voor de resultpagina
+                        let form = document.forms["mijnFormulier"];
+                        form.action = "resultaat.html?aanhef=" + aanhef + "&" + new URLSearchParams(new FormData(form)).toString();
+
+                        return true;  // Verzendt het formulier
+                    }
+
                     console.log("validateForm");
                     ///---------
                     let voornaam = document.forms["mijnFormulier"]["voornaam"].value;
@@ -301,8 +311,8 @@
                         ///---------
                     }
 
-                     ///---------
-                     let Datum = document.forms["mijnFormulier"]["Datum"].value;
+                    ///---------
+                    let Datum = document.forms["mijnFormulier"]["Datum"].value;
                     if (Datum == "") {
                         //alert("Name must be filled out");
                         document.getElementById("alertBijDatum").innerHTML =

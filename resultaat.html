@@ -97,16 +97,30 @@
                 let url = new URL(window.location.href);
 
                 let voornaam = url.searchParams.get("voornaam");
+                let tussenv = url.searchParams.get("tussenv");
                 let achternaam = url.searchParams.get("achternaam");
-                let email = url.searchParams.get("email");
                 let Huisnummer = url.searchParams.get("Huisnummer");
+                let toev = url.searchParams.get("Straatnaam");
+                let postcode = url.searchParams.get("Postcode");
+                let Telefoonnummer = url.searchParams.get("Telefoonnummer");
+                let email = url.searchParams.get("email");
+                let Datum = url.searchParams.get("Geboortedatum");
+
+                
 
                 // Vul de inhoud van het element met ID "resultaat" in
                 document.getElementById("resultaat").innerHTML =
                     "Voornaam: " + voornaam + 
+                    "<br><br>Tussenvoegsel: " + tussenv +
                     "<br><br>Achternaam: " + achternaam +
-                    "<br><br>Huisnummer: " + Huisnummer + // Zorg dat de variabele correct is
-                    "<br><br>Email: " + email;
+                    "<br><br>Huisnummer: " + Huisnummer +
+                    "<br><br>Straatnaam: " + toev +  
+                    "<br><br>Postcode: " + postcode + 
+                    "<br><br>Email: " + email +
+                    "<br><br>Telefoonnummer: " + Telefoonnummer +
+                    "<br><br>Geboortedatum: " + Datum
+
+                    ;
             </script>
 
             <br> <br> <br>

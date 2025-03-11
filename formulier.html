@@ -93,7 +93,7 @@
 
         <main>
 
-            <form>
+            <form action="resultaat.html" name="mijnFormulier" onsubmit="return validateForm()">
 
                 <div class="gegevens">
                     <h2>Vul hier uw gegevens in</h2> <br>
@@ -116,22 +116,48 @@
 
                     <div class="naam">
                         Namen
-                        <input type="text" placeholder="Voornaam" class="small-input" required>
-                        <input type="text" placeholder="Tussenv." class="small-input">
-                        <input type="text" placeholder="Achternaam" class="small-input" required>
+
+
+                        <input type="text" id="voornaam" name="voornaam" placeholder="voornaam" onfocus="resetForm();">
+
+                        <div id="alertBijNaam" style="color: red"></div>
+
+
+                        <input type="text" id="tussenv." name="tussenv." placeholder="tussenv." onfocus="resetForm();">
+
+                        <input type="text" id="achternaam" name="achternaam" placeholder="achternaam"
+                            onfocus="resetForm();">
+
+                        <div id="alertAchterNaam" style="color: red"></div>
+
+
                     </div><br>
                     <!--code voor- tussenv. achternaam-->
 
                     <div class="wonen">
                         Huisnummer
-                        <input type="text" placeholder="Nr." class="small-input" required>
-                        <input type="text" placeholder="Toev." class="small-input" required>
+                        <input type="text" id="huisnmr" name="huisnmr" placeholder="12" onfocus="resetForm();">
+
+                        <div id="alertBijhuisnmr" style="color: red"></div>
+
+
+
+
+                        <input type="text" id="toev" name="toev" placeholder="toev." onfocus="resetForm();">
+
+                        <div id="alertBijToev" style="color: red"></div>
+
                     </div> <br>
                     <!--code huisnmr en straat-->
 
                     <div class="wonen">
                         Postcode
-                        <input type="text" placeholder="1234AB" class="small-input" required>
+
+                        <input type="text" id="postcode" name="postcode" placeholder="1234AB"
+                            onfocus="resetForm();">
+
+                        <div id="alertBijPostcode" style="color: red"></div>
+
                     </div> <br>
                     <!--code postcode-->
 
@@ -150,38 +176,150 @@
 
                     <div class="wonen">
                         E-mail
-                        <input type="email" class="small-input" required>
+                        <input type="email" id="email" name="email" placeholder="email" onfocus="resetForm();">
+
+                        <div id="alertBijEmail" style="color: red"></div>
+
+
                     </div> <br>
                     <!--code email-->
 
                     <div class="wonen">
                         Telefoonnummer
-                        <input type="tel" placeholder="(06)" class="small-input" required>
+                        <input type="Telefoonnummer" id="Telefoonnummer" name="Telefoonnummer" placeholder="(06)"
+                            onfocus="resetForm();">
+
+                        <div id="alertBijTelefoon" style="color: red"></div>
+
                     </div> <br>
                     <!--code nummr-->
 
                     <div class="wonen">
                         Geboortedatum
-                        <input type="text" placeholder="dd-mm-jjjj" class="small-input" required>
+
+
+                        <input type="text" id="Datum" name="Datum" placeholder="dd-mm-jjjj"
+                            onfocus="resetForm();">
+
+                        <div id="alertBijDatum" style="color: red"></div>
                     </div> <br>
                     <!--code geboortedatum-->
 
-                    <input type="checkbox" value="Ik ga acort met de algemene voorwaarden" required>
+                    <input type="checkbox" value="Ik ga acort met de algemene voorwaarden">
                     <label> Ik ga akkoord met de <a href="">algemene voorwaarden</a>
                     </label> <br> <br>
                     <!--code checkbox-->
 
-                    <button class="verzenden" type="submit">Verzenden</button> <br> <br> <br>
+                    <input type="submit" value="Submit" class="verzenden"> <br> <br> <br>
                     <div class="lijnen"></div>
 
 
                 </div>
             </form>
 
+            <script>
+                function resetForm() {
+                    document.getElementById("alertBijNaam").innerHTML = "";
+                    document.getElementById("alertAchterNaam").innerHTML = "";
+                    document.getElementById("alertBijEmail").innerHTML = "";
+                    document.getElementById("alertBijhuisnmr").innerHTML = "";
+                    document.getElementById("alertBijToev").innerHTML = "";
+                    document.getElementById("alertBijPostcode").innerHTML = "";
+                    document.getElementById("alertBijTelefoon").innerHTML = "";
+                    document.getElementById("alertBijDatum").innerHTML = "";
+                }
 
+
+
+
+
+
+                function validateForm() {
+                    console.log("validateForm");
+                    ///---------
+                    let voornaam = document.forms["mijnFormulier"]["voornaam"].value;
+                    if (voornaam == "") {
+                        //alert("Name must be filled out");
+                        document.getElementById("alertBijNaam").innerHTML =
+                            "Naam moet ingevuld worden.";
+                        return false;
+                    }
+
+                    ///---------
+                    let achternaam = document.forms["mijnFormulier"]["achternaam"].value;
+                    if (achternaam == "") {
+                        //alert("Name must be filled out");
+                        document.getElementById("alertAchterNaam").innerHTML =
+                            "Achternaam moet ingevuld worden.";
+                        return false;
+                    }
+
+                    ///---------
+                    let huisnmr = document.forms["mijnFormulier"]["huisnmr"].value;
+                    if (huisnmr == "") {
+                        //alert("Name must be filled out");
+                        document.getElementById("alertBijhuisnmr").innerHTML =
+                            "huisnmr moet ingevuld worden.";
+                        return false;
+                    }
+
+
+                    ///---------
+                    let toev = document.forms["mijnFormulier"]["toev"].value;
+                    if (toev == "") {
+                        //alert("Name must be filled out");
+                        document.getElementById("alertBijToev").innerHTML =
+                            "Toev. moet ingevuld worden.";
+                        return false;
+                        ///---------
+                    }
+
+                    ///---------
+                    let postcode = document.forms["mijnFormulier"]["postcode"].value;
+                    if (postcode == "") {
+                        //alert("Name must be filled out");
+                        document.getElementById("alertBijPostcode").innerHTML =
+                            "Postcode moet ingevuld worden.";
+                        return false;
+                        ///---------
+                    }
+
+                    ///---------
+                    let email = document.forms["mijnFormulier"]["email"].value;
+                    if (email == "") {
+                        //alert("Name must be filled out");
+                        document.getElementById("alertBijEmail").innerHTML =
+                            "Email moet ingevuld worden.";
+                        return false;
+                        ///---------
+                    }
+
+                    ///---------
+                    let Telefoonnummer = document.forms["mijnFormulier"]["Telefoonnummer"].value;
+                    if (Telefoonnummer == "") {
+                        //alert("Name must be filled out");
+                        document.getElementById("alertBijTelefoon").innerHTML =
+                            "Telefoonnummer moet ingevuld worden.";
+                        return false;
+                        ///---------
+                    }
+
+                     ///---------
+                     let Datum = document.forms["mijnFormulier"]["Datum"].value;
+                    if (Datum == "") {
+                        //alert("Name must be filled out");
+                        document.getElementById("alertBijDatum").innerHTML =
+                            "Datum moet ingevuld worden.";
+                        return false;
+                        ///---------
+                    }
+
+                }
+            </script>
 
         </main>
-        <!--in de main komen alle producten te staan-->
+
+
 
         <footer>
 

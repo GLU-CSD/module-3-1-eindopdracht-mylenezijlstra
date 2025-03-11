@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gymshark</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <meta name="theme-color" content="#fafafa">
+
+
+    <style>
+        .doorhalen {
+            text-decoration: line-through;
+        }
+    </style>
+    <!--style zodat de voorgaande prijs doorgestreept is en je ziet dat dat de oude prijs was-->
+</head>
+
+<body>
+
+    <div id="resultaat"></div>
+
+    <script>
+      //show get valiables from form
+      let url = new URL(window.location.href);
+
+      let voornaam = url.searchParams.get("voornaam");
+      let achternaam = url.searchParams.get("achternaam");
+      let email = url.searchParams.get("email");
+      let Huisnummer = url.searchParams.get("Huisnummer");
+
+
+      document.getElementById("resultaat").innerHTML =
+        "Voornaam: " + voornaam + 
+        "<br>Achternaam: " + achternaam; +
+        "<br>Huisnummer: " + huisnmr; +
+        "<br>Email: " + email;
+
+    </script>
+
+</body>
+
+</html>

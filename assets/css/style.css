@@ -296,6 +296,33 @@ main {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(255, 255, 255);
+    /*kleur zie je niet op scherm*/
+  }
+
+  #content {
+    width: 400px;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .product {
+    width: 400px !important;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
 /*Hieronder vind je alles in de footer*/
 footer {
   background: rgb(213, 225, 255);
@@ -303,6 +330,7 @@ footer {
   width: 100%;
   /* Zorg ervoor dat de footer zelf 100% breedte heeft */
   box-sizing: border-box;
+  display: flex;
   /* Zorg ervoor dat padding wordt meegerekend in de totale breedte */
 }
 
@@ -311,9 +339,10 @@ footer {
   /* Verwijder eventueel marge */
   padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .betalen,
@@ -325,12 +354,28 @@ footer {
   justify-content: center;
   /* Zorg ervoor dat de items in de columns ook gecentreerd zijn */
   align-items: center;
+  flex: 1;
 }
 
 .onderkant {
   background-color: rgb(163, 180, 248);
   padding: 10px;
   /*ruimte rondom*/
+}
+
+/* Media query voor kleinere schermen (zoals telefoons) */
+@media screen and (max-width: 768px) {
+  .bovenkant {
+    flex-direction: column; /* Zet de items onder elkaar */
+    align-items: center; /* Centreert de items verticaal */
+  }
+
+  .betalen,
+  .informatie,
+  .klanten {
+    padding: 15px;
+    width: 80%; /* Zorg ervoor dat de inhoud niet te breed is */
+  }
 }
 
 /*Hieronder vind je alles voor de sidebar*/
@@ -408,62 +453,79 @@ footer {
 
 /*hieronder komt alles voor het bestel formulier*/
 
-.gegevens{
+.gegevens {
   padding: 20px;
   margin: 20px;
 }
 
 .aanhef {
   display: flex;
-  justify-content: space-between; /* Verdeel de ruimte gelijkmatig tussen de items */
-  align-items: center; /* Zorg dat de items verticaal gecentreerd zijn */
+  justify-content: space-between;
+  /* Verdeel de ruimte gelijkmatig tussen de items */
+  align-items: center;
+  /* Zorg dat de items verticaal gecentreerd zijn */
 }
 
 .aanhef input {
-  margin-left: 20px; /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
+  margin-left: 20px;
+  /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
 }
 
 .aanhef label {
-  margin-left: 5px; /* Optionele marge voor de labels */
+  margin-left: 5px;
+  /* Optionele marge voor de labels */
 }
 
 .small-input {
-  width: 150px; /* De breedte van het inputveld */
-  padding: 5px; /* De ruimte binnenin het inputveld */
-  font-size: 14px; /* De grootte van de tekst */
-  border: 1px solid #ccc; /* Een lichte rand */
-  border-radius: 4px; /* Ronde hoeken voor het inputveld */
+  width: 150px;
+  /* De breedte van het inputveld */
+  padding: 5px;
+  /* De ruimte binnenin het inputveld */
+  font-size: 14px;
+  /* De grootte van de tekst */
+  border: 1px solid #ccc;
+  /* Een lichte rand */
+  border-radius: 4px;
+  /* Ronde hoeken voor het inputveld */
 }
 
 .naam {
   display: flex;
-  justify-content: space-between; /* Verdeel de ruimte gelijkmatig tussen de items */
-  align-items: center; /* Zorg dat de items verticaal gecentreerd zijn */
+  justify-content: space-between;
+  /* Verdeel de ruimte gelijkmatig tussen de items */
+  align-items: center;
+  /* Zorg dat de items verticaal gecentreerd zijn */
 }
 
 .naam input {
-  margin-left: 20px; /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
+  margin-left: 20px;
+  /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
 }
 
 .naam label {
-  margin-left: 5px; /* Optionele marge voor de labels */
+  margin-left: 5px;
+  /* Optionele marge voor de labels */
 }
 
 .wonen {
   display: flex;
-  justify-content: space-between; /* Verdeel de ruimte gelijkmatig tussen de items */
-  align-items: center; /* Zorg dat de items verticaal gecentreerd zijn */
+  justify-content: space-between;
+  /* Verdeel de ruimte gelijkmatig tussen de items */
+  align-items: center;
+  /* Zorg dat de items verticaal gecentreerd zijn */
 }
 
 .wonen input {
-  margin-left: 20px; /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
+  margin-left: 20px;
+  /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
 }
 
 .wonen label {
-  margin-left: 5px; /* Optionele marge voor de labels */
+  margin-left: 5px;
+  /* Optionele marge voor de labels */
 }
 
-.land{
+.land {
   padding: 2px;
   border-radius: 2px;
   width: 160px;
@@ -471,20 +533,19 @@ footer {
   border: 1px solid #a2a2a2
 }
 
-.mail{
+.mail {
   padding: 6px;
   width: 160px;
 }
 
-.verzenden{
+.verzenden {
   padding: 6px;
   border-radius: 2px;
   width: 100px;
-  border: 1px solid #000000 
+  border: 1px solid #000000
 }
 
-.gegeven{
+.gegeven {
   margin: 20px;
   padding: 20px;
 }
-

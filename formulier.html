@@ -200,8 +200,11 @@
                     <div class="wonen">
                         Geboortedatum
 
-                        <input type="date" id="Datum" name="Datum" placeholder="dd-mm-jjjj" onfocus="resetForm();">
-
+                        <input type="text" id="Datum" name="Datum" placeholder="dd-mm-jjjj" onfocus="resetForm();">
+                        <!--Ik wilde ipmut type date gebruikt maar die kwam niet door de W3C validator heen. 
+                        Dit komt omdat date niet ondersteunt word in safari en andere. 
+                        Omdat ik altijd safari gebruik heb ik ervoor gekozen om date niet te gebruiken 
+                        en ipv daarvan tekst, zodat mijn website ook op mijn telefoon werkt-->
                         <div id="alertBijDatum" style="color: red"></div>
                     </div> <br>
                     <!--code geboortedatum-->

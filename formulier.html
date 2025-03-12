@@ -50,15 +50,15 @@
             <div style="display:flex; margin-right:50px; background-color: rgb(163, 180, 248);">
 
                 <div class="topnav" id="myTopnav">
-					<!-- Links die je zichtbaar wilt maken in het hamburgermenu -->
-					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-						<i class="fa fa-bars"></i> <!-- Hamburger icoon -->
-					  </a>
-					<a href="resultaat.html">mijn gegevens</a>
-					<a href="formulier.html">inloggen</a>
-					<a href="formulier.html">registeren</a>
-					<!-- Hamburger icoon dat zichtbaar wordt op kleine schermen -->
-				  </div>
+                    <!-- Links die je zichtbaar wilt maken in het hamburgermenu -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i> <!-- Hamburger icoon -->
+                    </a>
+                    <a href="resultaat.html">mijn gegevens</a>
+                    <a href="formulier.html">inloggen</a>
+                    <a href="formulier.html">registeren</a>
+                    <!-- Hamburger icoon dat zichtbaar wordt op kleine schermen -->
+                </div>
             </div>
         </div>
 
@@ -121,7 +121,6 @@
 
                     <div class="naam">
                         Namen
-
 
                         <input type="text" id="voornaam" name="voornaam" placeholder="voornaam" onfocus="resetForm();">
 
@@ -190,7 +189,7 @@
 
                     <div class="wonen">
                         Telefoonnummer
-                        <input type="Telefoonnummer" id="Telefoonnummer" name="Telefoonnummer" placeholder="(06)"
+                        <input type="tel" id="Telefoonnummer" name="Telefoonnummer" placeholder="(06)"
                             onfocus="resetForm();">
 
                         <div id="alertBijTelefoon" style="color: red"></div>
@@ -201,8 +200,7 @@
                     <div class="wonen">
                         Geboortedatum
 
-
-                        <input type="text" id="Datum" name="Datum" placeholder="dd-mm-jjjj" onfocus="resetForm();">
+                        <input type="date" id="Datum" name="Datum" placeholder="dd-mm-jjjj" onfocus="resetForm();">
 
                         <div id="alertBijDatum" style="color: red"></div>
                     </div> <br>
@@ -221,126 +219,7 @@
 
                 </div>
             </form>
-
-            <script>
-                function resetForm() {
-                    document.getElementById("alertBijNaam").innerHTML = "";
-                    document.getElementById("alertAchterNaam").innerHTML = "";
-                    document.getElementById("alertBijEmail").innerHTML = "";
-                    document.getElementById("alertBijhuisnmr").innerHTML = "";
-                    document.getElementById("alertBijToev").innerHTML = "";
-                    document.getElementById("alertBijPostcode").innerHTML = "";
-                    document.getElementById("alertBijTelefoon").innerHTML = "";
-                    document.getElementById("alertBijDatum").innerHTML = "";
-                }
-
-                function validateForm() {
-
-                    function validateForm() {
-                        // Haal de geselecteerde aanhef op
-                        let aanhef = document.querySelector('input[name="aanhef"]:checked').value;
-
-                        // Voeg de aanhef toe aan de querystring voor de resultpagina
-                        let form = document.forms["mijnFormulier"];
-                        form.action = "resultaat.html?aanhef=" + aanhef + "&" + new URLSearchParams(new FormData(form)).toString();
-
-                        return true;  // Verzendt het formulier
-                    }
-
-                    console.log("validateForm");
-                    ///---------
-                    let voornaam = document.forms["mijnFormulier"]["voornaam"].value;
-                    if (voornaam == "") {
-                        //alert("Name must be filled out");
-                        document.getElementById("alertBijNaam").innerHTML =
-                            "Naam moet ingevuld worden.";
-                        return false;
-                    }
-
-                    ///---------
-                    let achternaam = document.forms["mijnFormulier"]["achternaam"].value;
-                    if (achternaam == "") {
-                        //alert("Name must be filled out");
-                        document.getElementById("alertAchterNaam").innerHTML =
-                            "Achternaam moet ingevuld worden.";
-                        return false;
-                    }
-
-                    ///---------
-                    let Huisnummer = document.forms["mijnFormulier"]["Huisnummer"].value;
-                    if (Huisnummer == "") {
-                        //alert("Name must be filled out");
-                        document.getElementById("alertBijhuisnmr").innerHTML =
-                            "Huisnummer moet ingevuld worden.";
-                        return false;
-                    }
-
-
-                    ///---------
-                    let toev = document.forms["mijnFormulier"]["toev"].value;
-                    if (toev == "") {
-                        //alert("Name must be filled out");
-                        document.getElementById("alertBijToev").innerHTML =
-                            "Toev. moet ingevuld worden.";
-                        return false;
-                        ///---------
-                    }
-
-                    ///---------
-                    let postcode = document.forms["mijnFormulier"]["postcode"].value;
-                    if (postcode == "") {
-                        //alert("Name must be filled out");
-                        document.getElementById("alertBijPostcode").innerHTML =
-                            "Postcode moet ingevuld worden.";
-                        return false;
-                        ///---------
-                    }
-
-                    ///---------
-                    let email = document.forms["mijnFormulier"]["email"].value;
-                    if (email == "") {
-                        //alert("Name must be filled out");
-                        document.getElementById("alertBijEmail").innerHTML =
-                            "Email moet ingevuld worden.";
-                        return false;
-                        ///---------
-                    }
-
-                    ///---------
-                    let Telefoonnummer = document.forms["mijnFormulier"]["Telefoonnummer"].value;
-                    if (Telefoonnummer == "") {
-                        //alert("Name must be filled out");
-                        document.getElementById("alertBijTelefoon").innerHTML =
-                            "Telefoonnummer moet ingevuld worden.";
-                        return false;
-                        ///---------
-                    }
-
-                    ///---------
-                    let Datum = document.forms["mijnFormulier"]["Datum"].value;
-                    if (Datum == "") {
-                        //alert("Name must be filled out");
-                        document.getElementById("alertBijDatum").innerHTML =
-                            "Datum moet ingevuld worden.";
-                        return false;
-                        ///---------
-                    }
-                    let checkbpxchecked = document.getElementById("checkbox1").checked;
-                    if (checkbpxchecked == false) {
-                        //alert("Name must be filled out");
-                        document.getElementById("alertBijCheckbox").innerHTML =
-                            "Algemene voorwaarden accepteren.";
-                        return false;
-                        ///---------
-                    }
-
-
-                }
-            </script>
-
         </main>
-
-
 
         <footer>
 

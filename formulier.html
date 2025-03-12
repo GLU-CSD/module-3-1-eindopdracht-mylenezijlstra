@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gymshark</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="description" content="">
 
     <meta property="og:title" content="">
@@ -47,13 +48,17 @@
                 </select>
             </div>
             <div style="display:flex; margin-right:50px; background-color: rgb(163, 180, 248);">
-                <!--kleur die hetzelde is als de achtergrond-->
-                <div class="menuLeft"><a href="resultaat.html">mijn gegevens</a></div>
-                <div class="menuLeft">|</div>
-                <div class="menuLeft"><a href="formulier.html">inloggen</a></div>
-                <div class="menuLeft">|</div>
-                <div class="menuLeft"><a href="formulier.html">registeren</a></div>
-                <!--links die bovenaan de pagina naar andere paginas gaan zoals de inlog pagina etc.-->
+
+                <div class="topnav" id="myTopnav">
+					<!-- Links die je zichtbaar wilt maken in het hamburgermenu -->
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i> <!-- Hamburger icoon -->
+					  </a>
+					<a href="resultaat.html">mijn gegevens</a>
+					<a href="formulier.html">inloggen</a>
+					<a href="formulier.html">registeren</a>
+					<!-- Hamburger icoon dat zichtbaar wordt op kleine schermen -->
+				  </div>
             </div>
         </div>
 

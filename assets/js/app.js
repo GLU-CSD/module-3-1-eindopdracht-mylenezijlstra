@@ -18,3 +18,15 @@ function winkelWagenAdd() {
 }
 //deze regels code zijn voor local stoarge. 
 // Als ik dan naar een andere pagina ga of de pagina refresh blijft het cijfer in het bolletje hetzelde.
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";  // Voeg de klasse 'responsive' toe om de links zichtbaar te maken
+  } else {
+    x.className = "topnav";  // Verwijder de klasse 'responsive' om de links weer te verbergen
+  }
+}
+
+

@@ -54,9 +54,9 @@
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i> <!-- Hamburger icoon -->
                     </a>
-                    <a href="resultaat.html">mijn gegevens</a>
                     <a href="formulier.html">inloggen</a>
                     <a href="formulier.html">registeren</a>
+                    <a href="resultaat.html">mijn gegevens</a>
                     <!-- Hamburger icoon dat zichtbaar wordt op kleine schermen -->
                 </div>
             </div>
@@ -104,8 +104,9 @@
                     <h2>Vul hier uw gegevens in</h2> <br>
                     <div class="lijnen"></div><br> <br> <br>
 
-                    <div class="aanhef">
+                    <div class="wonen">
                         Aanhef:
+
                         <input type="radio" name="aanhef" value="Dhr." checked>
                         <label> Dhr.</label>
 
@@ -118,24 +119,27 @@
                     <br>
                     <!--code aanhef-->
 
-
-                    <div class="naam">
-                        Namen
-
+                    <div class="wonen">
+                        voornaam
                         <input type="text" id="voornaam" name="voornaam" placeholder="voornaam" onfocus="resetForm();">
 
                         <div id="alertBijNaam" style="color: red"></div>
-
-
+                    </div> <br>
+                    <div class="wonen">
+                        tussenvoegsel
                         <input type="text" id="tussenv" name="tussenv" placeholder="tussenv." onfocus="resetForm();">
+                    </div><br>
 
+                    <div class="wonen">
+                        Achternaam
                         <input type="text" id="achternaam" name="achternaam" placeholder="achternaam"
                             onfocus="resetForm();">
 
                         <div id="alertAchterNaam" style="color: red"></div>
-
-
                     </div><br>
+
+
+
                     <!--code voor- tussenv. achternaam-->
 
                     <div class="wonen">
@@ -143,15 +147,16 @@
                         <input type="text" id="Huisnummer" name="Huisnummer" placeholder="12" onfocus="resetForm();">
 
                         <div id="alertBijhuisnmr" style="color: red"></div>
+                    </div> <br>
 
 
-
-
+                    <div class="wonen">
+                        Straatnaam 
                         <input type="text" id="toev" name="toev" placeholder="straatnaam" onfocus="resetForm();">
 
                         <div id="alertBijToev" style="color: red"></div>
+                    </div><br>
 
-                    </div> <br>
                     <!--code huisnmr en straat-->
 
                     <div class="wonen">
@@ -165,7 +170,7 @@
                     <!--code postcode-->
 
                     <div class="wonen">
-                        Land:
+                        Land
                         <select class="land" name="Land" id="Land">
                             <option value="Nederlands">Nederland</option>
                             <!--verschillende talen voor de website-->

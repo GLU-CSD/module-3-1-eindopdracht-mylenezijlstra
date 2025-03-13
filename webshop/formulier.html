@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="no-js" lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gymshark</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <meta name="theme-color" content="#fafafa">
+
+
+    <style>
+        .doorhalen {
+            text-decoration: line-through;
+        }
+    </style>
+    <!--style zodat de voorgaande prijs doorgestreept is en je ziet dat dat de oude prijs was-->
+</head>
+
+<body style="background-color: white;">
+
+    <div id="content">
+
+        <div class="bovenbalk">
+            <div style="display:flex; margin-left:50px; background-color: rgb(163, 180, 248)">
+                <!--kleur die hetzelde is als de achtergrond-->
+                <div class="menuRight">Taal:</div>
+                <select class="menuLeft" name="Taal" id="Taal">
+                    <option value="Nederlands">Nederlands</option>
+                    <!--verschillende talen voor de website-->
+                    <option value="Duits">Duits</option>
+                    <option value="Frans">Frans</option>
+                    <option value="Spaans">Spaans</option>
+                    <option value="Engels">Engels</option>
+                </select>
+            </div>
+            <div style="display:flex; margin-right:50px; background-color: rgb(163, 180, 248);">
+
+                <div class="topnav" id="myTopnav">
+                    <!-- Links die je zichtbaar wilt maken in het hamburgermenu -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i> <!-- Hamburger icoon -->
+                    </a>
+                    <a href="formulier.html">login</a>
+                    <a href="formulier.html">registeren</a>
+                    <a href="resultaat.php">mijn gegevens</a>
+                    <!-- Hamburger icoon dat zichtbaar wordt op kleine schermen -->
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="onderbalk">
+
+                <div>
+                    <!--Buitenste box-->
+
+                    <div class="logo">
+                        <!--De box waar logo gymshark links in te zien is-->
+                        <img src="assets/img/logo1.jpg" alt="logo">
+                    </div>
+
+                    <div class="winkel">
+                        <!--De box waar logo winkelwagen rechts in te zien is-->
+                        <img src="assets/img/winkel1.jpg" alt="winkelwagen">
+                    </div>
+
+                    <div id="winkelwagenbolletje" class="bolletje">1</div>
+
+                </div>
+                <!--Buitenste box-->
+
+                <!-- Navigatiebalk -->
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dames.html">Dames</a></li>
+                        <li><a href="heren.html">Heren</a></li>
+                        <!--werkende linkjes-->
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+
+            <form action="resultaat.php" method="GET" name="mijnFormulier" onsubmit="return validateForm()">
+
+                <div class="gegevens">
+                    <h2>Vul hier uw gegevens in</h2> <br>
+                    <div class="lijnen"></div><br> <br> <br>
+
+                    <div class="wonen">
+                        Aanhef:
+
+                        <input type="radio" name="aanhef" value="Dhr." checked>
+                        <label> Dhr.</label>
+
+                        <input type="radio" name="aanhef" value="Mevr.">
+                        <label> Mevr.</label>
+
+                        <input type="radio" name="aanhef" value="Anders">
+                        <label> Anders</label>
+                    </div>
+                    <br>
+                    <!--code aanhef-->
+
+                    <div class="wonen">
+                        voornaam
+                        <input type="text" id="voornaam" name="voornaam" placeholder="voornaam" onfocus="resetForm();" value="test">
+
+                        <div id="alertBijNaam" style="color: red"></div>
+                    </div> <br>
+                    <div class="wonen">
+                        tussenvoegsel
+                        <input type="text" id="tussenv" name="tussenv" placeholder="tussenv." onfocus="resetForm();">
+                    </div><br>
+
+                    <div class="wonen">
+                        Achternaam
+                        <input type="text" id="achternaam" name="achternaam" placeholder="achternaam" value="test"
+                            onfocus="resetForm();">
+
+                        <div id="alertAchterNaam" style="color: red"></div>
+                    </div><br>
+
+
+
+                    <!--code voor- tussenv. achternaam-->
+
+                    <div class="wonen">
+                        Huisnummer
+                        <input type="number" id="huisnummer" name="huisnummer" placeholder="12" onfocus="resetForm();" value="12">
+
+                        <div id="alertBijhuisnmr" style="color: red"></div>
+                    </div> <br>
+
+
+                    <div class="wonen">
+                        Straatnaam 
+                        <input type="text" id="toev" name="straatnaam" placeholder="straatnaam" onfocus="resetForm();" value="test">
+
+                        <div id="alertBijToev" style="color: red"></div>
+                    </div><br>
+
+                    <!--code huisnmr en straat-->
+
+                    <div class="wonen">
+                        Postcode
+
+                        <input type="text" id="postcode" name="postcode" placeholder="1234AB" onfocus="resetForm();" value="test">
+
+                        <div id="alertBijPostcode" style="color: red"></div>
+
+                    </div> <br>
+                    <!--code postcode-->
+
+                    <div class="wonen">
+                        Land
+                        <select class="land" name="land" id="Land">
+                            <option value="Nederlands">Nederland</option>
+                            <!--verschillende talen voor de website-->
+                            <option value="Duits">Duitsland</option>
+                            <option value="Frans">Frankrijk</option>
+                            <option value="Spaans">Spanje</option>
+                            <option value="Engels">Engeland</option>
+                        </select>
+                    </div> <br>
+                    <!--code land-->
+
+                    <div class="wonen">
+                        E-mail
+                        <input type="email" id="email" name="email" placeholder="email" onfocus="resetForm();" value="test@test.test">
+
+                        <div id="alertBijEmail" style="color: red"></div>
+
+
+                    </div> <br>
+                    <!--code email-->
+
+                    <div class="wonen">
+                        Telefoonnummer
+                        <input type="tel" id="Telefoonnummer" name="telefoonnummer" placeholder="(06)"
+                            onfocus="resetForm();" value="test">
+
+                        <div id="alertBijTelefoon" style="color: red"></div>
+
+                    </div> <br>
+                    <!--code nummr-->
+
+                    <div class="wonen">
+                        Geboortedatum
+
+                        <input type="text" id="datum" name="datum" placeholder="dd-mm-jjjj" onfocus="resetForm();" value="test">
+                        <!--Ik wilde ipmut type date gebruikt maar die kwam niet door de W3C validator heen. 
+                        Dit komt omdat date niet ondersteunt word in safari en andere. 
+                        Omdat ik altijd safari gebruik heb ik ervoor gekozen om date niet te gebruiken 
+                        en ipv daarvan tekst, zodat mijn website ook op mijn telefoon werkt-->
+                        <div id="alertBijDatum" style="color: red"></div>
+                    </div> <br>
+                    <!--code geboortedatum-->
+
+                    <input type="checkbox" value="Ik ga acort met de algemene voorwaarden" id="checkbox1">
+                    <label> Ik ga akkoord met de <a href="">algemene voorwaarden</a>
+                    </label>
+                    <div id="alertBijCheckbox" style="color: red"></div>
+                    <br> <br>
+                    <!--code checkbox-->
+
+                    <input type="submit" value="Submit" class="verzenden"> <br> <br> <br>
+                    <div class="lijnen"></div>
+
+
+                </div>
+            </form>
+        </main>
+
+        <footer>
+
+            <!--Gecentreerd met flexbox-->
+            <div class="bovenkant">
+                <div class="betalen">
+                    <h3>Veilig betalen</h3> <br>
+                    <div>Betaal in </div>
+                    <div>alle veiligheid</div>
+                    <div>met onze </div>
+                    <div>partners</div>
+                </div>
+                <!--info over betaling links-->
+
+                <div class="klanten">
+
+                    <h3>Klantenservice</h3> <br>
+                    <ul>
+                        <li>Wachtwoord vergeten</li>
+                        <li>Veilige betaling</li>
+                        <li>Levering</li>
+                        <li>Retouneren</li>
+                    </ul>
+                </div>
+                <!--info over klantenservice midden-->
+
+                <div class="informatie">
+                    <h3>Over ons</h3> <br>
+                    <ul>
+                        <li>Over ons</li>
+                        <li>Contact informatie</li>
+                        <li>Algemene voorwaarden</li>
+                        <li>Privacy beleid</li>
+                    </ul>
+                </div>
+                <!--info over ons rechts-->
+            </div>
+
+        </footer>
+
+        <div class="onderkant">
+            Copyright @ gymshark.com <!--copyright tekst. Onderkant van de footer-->
+        </div>
+
+        <!--de footer staat onder aan de pagina, hier komt het laatste beetje informatie in te staan-->
+
+        <script src="assets/js/app.js"></script>
+    </div>
+
+</body>
+
+</html>

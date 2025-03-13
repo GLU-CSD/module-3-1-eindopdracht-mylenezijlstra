@@ -1,0 +1,720 @@
+<!doctype html>
+<html class="no-js" lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gymshark</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <style>
+        .doorhalen {
+            text-decoration: line-through;
+        }
+    </style>
+    <!--style zodat de voorgaande prijs doorgestreept is en je ziet dat dat de oude prijs was-->
+</head>
+
+<body style="background-color: white;">
+
+    <div id="content">
+
+        <div class="bovenbalk">
+            <div style="display:flex; margin-left:50px; background-color: rgb(163, 180, 248)">
+                <!--kleur die hetzelde is als de achtergrond-->
+                <div class="menuRight">Taal:</div>
+                <select class="menuLeft" name="Taal" id="Taal">
+                    <option value="Nederlands">Nederlands</option>
+                    <!--verschillende talen voor de website-->
+                    <option value="Duits">Duits</option>
+                    <option value="Frans">Frans</option>
+                    <option value="Spaans">Spaans</option>
+                    <option value="Engels">Engels</option>
+                </select>
+            </div>
+            <div style="display:flex; margin-right:50px; background-color: rgb(163, 180, 248);">
+                <!--kleur die hetzelde is als de achtergrond-->
+                <div class="topnav" id="myTopnav">
+                    <!-- Links die je zichtbaar wilt maken in het hamburgermenu -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i> <!-- Hamburger icoon -->
+                    </a>
+                    <a href="formulier.html">login</a>
+                    <a href="formulier.html">registeren</a>
+                    <a href="resultaat.php">mijn gegevens</a>
+                    <!-- Hamburger icoon dat zichtbaar wordt op kleine schermen -->
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="onderbalk">
+
+                <div>
+                    <!--Buitenste box-->
+
+                    <div class="logo">
+                        <!--De box waar logo gymshark links in te zien is-->
+                        <img src="assets/img/logo1.jpg" alt="logo">
+                    </div>
+
+                    <div class="winkel">
+                        <!--De box waar logo winkelwagen rechts in te zien is-->
+                        <img src="assets/img/winkel1.jpg" alt="winkelwagen">
+                    </div>
+
+                    <div id="winkelwagenbolletje" class="bolletje">1</div>
+
+                </div>
+                <!--Buitenste box-->
+
+                <!-- Navigatiebalk -->
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dames.html">Dames</a></li>
+                        <li><a href="heren.html">Heren</a></li>
+                        <!--werkende linkjes-->
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <div class="search-container">
+            <input type="text" placeholder="Zoek hier..." class="search-input">
+            <button type="submit" class="search-button">Zoeken</button>
+        </div>
+        <!--de submit button en de tekst zoek hier in de zoekbalk onder de header-->
+
+        <main>
+            <div id="sidebar">
+
+                <div class="Doosjes">
+                    <h3>Maten</h3> <br>
+
+                    <input type="checkbox" value="xs">
+                    <label> XS</label><br>
+                    <input type="checkbox" value="s">
+                    <label> S</label><br>
+                    <input type="checkbox" value="m">
+                    <label> M</label><br>
+                    <input type="checkbox" value="l">
+                    <label> L</label><br>
+                    <input type="checkbox" value="xl">
+                    <label> XL</label><br>
+                    <!--met behulp van w3schools-->
+                    <!--checkboxen met de maten van de kledinstukken-->
+                </div>
+
+                <div class="Doosjes">
+                    <h3>Uw Selectie Verfijnen</h3> <br>
+
+                    <input type="checkbox" value="Legging">
+                    <label> Legging</label><br>
+                    <input type="checkbox" value="Bh">
+                    <label> Bh</label><br>
+                    <input type="checkbox" value="Shorts">
+                    <label> Shorts</label><br>
+                    <input type="checkbox" value="Joggers">
+                    <label> Joggers</label><br>
+                    <input type="checkbox" value="Shirts">
+                    <label> Shirts</label><br>
+                    <!--zelde checkbox, maar andere namen-->
+                    <!--checkboxen met de soort kleding-->
+                </div>
+
+                <div class="Doosjes">
+                    <h3>Kleuren</h3> <br>
+
+                    <input type="checkbox" value="zwart">
+                    <label> Zwart</label><br>
+                    <input type="checkbox" value="wit">
+                    <label> Wit</label><br>
+                    <input type="checkbox" value="grijs">
+                    <label> Grijs</label><br>
+                    <input type="checkbox" value="rood">
+                    <label> Rood</label><br>
+                    <input type="checkbox" value="oranje">
+                    <label> Oranje</label><br>
+                    <input type="checkbox" value="geel">
+                    <label> Geel</label><br>
+                    <input type="checkbox" value="Groen">
+                    <label> Groen</label><br>
+                    <input type="checkbox" value="Blauw">
+                    <label> Blauw</label><br>
+                    <input type="checkbox" value="roze">
+                    <label> Roze</label><br>
+                    <input type="checkbox" value="Paars">
+                    <label> Paars</label><br>
+                    <!--met behulp van w3schools-->
+                    <!--checkbox met de kleur van de kleding-->
+                </div>
+
+                <div class="Doosjes">
+                    <h3>Prijs</h3> <br>
+                    <div class="prijzen">
+                        <div class="prijslaag">
+                            $0
+                        </div>
+                        <div class="prijshoog">
+                            $50
+                        </div>
+                    </div>
+                    <!--prijzen voor bij de slidebar in de sidebar-->
+
+
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="prijsslider">
+                    </div>
+                    <!--slider met behulp van 3wschools-->
+                </div>
+            </div>
+
+            <div id="products">
+                <div class="lijn">
+                    <br>
+                    <div style="display:flex; margin-left:0px;">
+                        <!--kleur die hetzelde is als de achtergrond-->
+                        <div class="mainRight">Selecteer op naam: </div>
+                        <select class="mainLeft" name="Selecteer" id="Selecteer">
+                            <option value="Sportlegging">Sportlegging</option>
+                            <!--verschillende talen voor de website-->
+                            <option value="Sport Bh">Sport Bh</option>
+                            <option value="Shirts">Shirts</option>
+                            <option value="Joggers">Joggers</option>
+                            <option value="Shorts">Shorts</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div style="margin-left:10px;"> 18 artikel(en)</div> <br>
+                    <div class="lijnen"></div>
+                </div>
+                <!--dit is de grootste box. Hierin staat het product en alle informatie over het product(sportlegging)-->
+
+                <!--short blauw-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shorts)-->
+                    <img src="assets/img/shortsblauw.jpg" alt="product">
+                    <!--foto van mijn product (Shorts)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Shorts Blauw</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $15</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--short groen-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shorts)-->
+                    <img src="assets/img/shortsgroen.jpg" alt="product">
+                    <!--foto van mijn product (Shorts)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Shorts Groen</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $15</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--short paars-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shorts)-->
+                    <img src="assets/img/shortspaars.jpg" alt="product">
+                    <!--foto van mijn product (Shorts)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Shorts Paars</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $15</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--short rood-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shorts)-->
+                    <img src="assets/img/shortsrood.jpg" alt="product">
+                    <!--foto van mijn product (Shorts)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Shorts Rood</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $15</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--short roze-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shorts)-->
+                    <img src="assets/img/shortsroze.jpg" alt="product">
+                    <!--foto van mijn product (Shorts)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Shorts Roze</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $15</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--short zwart-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shorts)-->
+                    <img src="assets/img/shortszwart.jpg" alt="product">
+                    <!--foto van mijn product (Shorts)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Shorts Zwart</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $15</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sportlegging blauw-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (sportlegging)-->
+                    <img src="assets/img/sportleggingblauw.jpg" alt="product">
+                    <!--foto van mijn product (sportlegging)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Seamless Leggings blauw</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $40</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $60</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sportlegging groen-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (sportlegging)-->
+                    <img src="assets/img/legginggroen.jpg" alt="product">
+                    <!--foto van mijn product (sportlegging)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Seamless Leggings Groen</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $40</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $60</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sportlegging zwart-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (sportlegging)-->
+                    <img src="assets/img/sportleggingzwart.jpg" alt="product">
+                    <!--foto van mijn product (sportlegging)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Seamless Leggings Zwart</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $30</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $50</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sportlegging grijs-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (sportlegging)-->
+                    <img src="assets/img/sportlegginggrijs.jpg" alt="product">
+                    <!--foto van mijn product (sportlegging)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Seamless Leggings Grijs</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $30</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $50</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sportlegging roze-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (sportlegging)-->
+                    <img src="assets/img/sportleggingroze.jpg" alt="product">
+                    <!--foto van mijn product (sportlegging)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Seamless Leggings Roze</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $35</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $55</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sportshirt wit-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shirt)-->
+                    <img src="assets/img/shirtwit.jpg" alt="product">
+                    <!--foto van mijn product (Shirt)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Fraction Shirt Wit</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $25</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sportshirt Blauw-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shirt)-->
+                    <img src="assets/img/shirtblauw.jpg" alt="product">
+                    <!--foto van mijn product (Shirt)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Fraction Shirt Blauw</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $25</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sportshirt bruin-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shirt)-->
+                    <img src="assets/img/shirtbruin.jpg" alt="product">
+                    <!--foto van mijn product (Shirt)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Fraction Shirt Bruin</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $20</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sportshirt Lavendel-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (Shirt)-->
+                    <img src="assets/img/shirtpaars.jpg" alt="product">
+                    <!--foto van mijn product (Shirt)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Fraction Shirt Paars</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $20</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sport bh zwart-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (bh)-->
+                    <img src="assets/img/sportbhzwart.jpg" alt="product">
+                    <!--foto van mijn product (bh)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Sport Bh Zwart</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $20</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sport bh wit-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (bh)-->
+                    <img src="assets/img/sportbhwit.jpg" alt="product">
+                    <!--foto van mijn product (bh)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Sport Bh Wit</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $20</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (met doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--sport bh Groen-->
+                <div class="product">
+                    <!--De box waar de foto van mijn product in staat (bh)-->
+                    <img src="assets/img/sportbhgroen.jpg" alt="product">
+                    <!--foto van mijn product (bh)-->
+                    <div class="onder">
+                        <div class="onderlinks">
+                            <div>
+                                <h3 style="margin-top:10px;">Sport Bh Groen</h3>
+                                <!--Informatie/naam van het product. Staat links bovenin-->
+                            </div>
+                            <div>
+                                <p>Prijs: $20</p>
+                                <!--Huidige prijs-->
+                                <p class="doorhalen">Prijs: $35</p>
+                                <!--vorige prijs (mmet doorgestreepte prijs)-->
+                            </div>
+                        </div>
+                        <div class="onderrechts">
+                            <button onclick="winkelWagenAdd()">Add to cart</button>
+                            <!--button rechts in het midden-->
+                        </div>
+                    </div>
+                </div>
+                <div class="lijn">
+                    <div style="margin-left:10px;">18 artikel(en)</div> <br>
+                    <div class="lijnen"></div>
+                    <br> <br> <br>
+                    <!--lange lijn om de producte van de boven en onderkant af te scheiden van de main-->
+                </div>
+
+            </div> <!--Alle 21 producten met beschrijving en foto-->
+
+        </main>
+        <!--in de main komen alle producten te staan-->
+
+        <footer>
+
+            <!--Gecentreerd met flexbox-->
+            <div class="bovenkant">
+                <div class="betalen">
+                    <h3>Veilig betalen</h3> <br>
+                    <div>Betaal in </div>
+                    <div>alle veiligheid</div>
+                    <div>met onze </div>
+                    <div>partners</div>
+                </div>
+                <!--info over betaling links-->
+
+                <div class="klanten">
+
+                    <h3>Klantenservice</h3> <br>
+                    <ul>
+                        <li>Wachtwoord vergeten</li>
+                        <li>Veilige betaling</li>
+                        <li>Levering</li>
+                        <li>Retouneren</li>
+                    </ul>
+                </div>
+                <!--info over klantenservice midden-->
+
+                <div class="informatie">
+                    <h3>Over ons</h3> <br>
+                    <ul>
+                        <li>Over ons</li>
+                        <li>Contact informatie</li>
+                        <li>Algemene voorwaarden</li>
+                        <li>Privacy beleid</li>
+                    </ul>
+                </div>
+                <!--info over ons rechts-->
+            </div>
+
+        </footer>
+
+        <div class="onderkant">
+            Copyright @ gymshark.com <!--copyright tekst. Onderkant van de footer-->
+        </div>
+
+        <!--de footer staat onder aan de pagina, hier komt het laatste beetje informatie in te staan-->
+
+        <script src="assets/js/app.js"></script>
+    </div>
+
+</body>
+
+</html>

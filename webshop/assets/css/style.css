@@ -1,0 +1,605 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  /*zorgt dat pagina niet groter is dan beeldscherm*/
+  display: flex;
+  /*zorgt dat pagina mee gaat als de grootte veranderd*/
+  justify-content: center;
+  /*zorgt dat pagina in het midden staat*/
+  background-color: rgb(255, 255, 255);
+  /*achtergrond kleur*/
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Hieronder vind je alles in de header tot en met de main*/
+header {
+  background: rgb(213, 225, 255);
+  /*kleur header (bovenaan de pagina)*/
+  padding: 10px;
+}
+
+.bovenbalk {
+  background-color: rgb(163, 180, 248);
+  /*achtergrond kleur*/
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.bovenbalk .menuRight {
+  padding: 10px;
+  /*Zodat in het midden staat*/
+}
+
+/* Stijl voor de topnavi */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(163, 180, 248);
+  /* Dezelfde kleur als de bovenbalk */
+}
+
+/* Links in de topnavi */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Verberg de hamburgerknop op grote schermen */
+.topnav .icon {
+  display: none;
+}
+
+/* Verberg de links op kleinere schermen en toon de hamburgerknop */
+@media screen and (max-width: 850px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  /* Verberg alle links behalve de hamburgerknop */
+  .topnav a.icon {
+    float: right;
+    display: block;
+    /* Toon de hamburgerknop */
+  }
+}
+
+/* Wanneer het hamburgermenu geactiveerd wordt */
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    /* Links verticaal weergeven */
+  }
+}
+
+.bovenbalk .menuLeft {
+  padding: 10px;
+  height: 40px;
+  /*ruimte rondom*/
+}
+
+.mainLeft {
+  padding: 10px;
+}
+
+.mainRight {
+  padding: 10px;
+}
+
+.onderbalk {
+  background-color: rgb(213, 225, 255);
+  /*achtergrond kleur*/
+  display: flex;
+  justify-content: space-between;
+  /* Verdeel de ruimte tussen logo en nav */
+  align-items: center;
+  padding: 10px;
+  position: relative;
+
+}
+
+/* Styling voor de navigatiebalk */
+.navbar {
+  position: absolute;
+  /* Navbalk absoluut ten opzichte van de onderbalk */
+  left: 50%;
+  /* Zet de navbar in het midden van de onderbalk */
+  transform: translateX(-50%);
+  /* Verplaatst de nav precies naar het midden */
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin: 15px;
+  /* Ruimte tussen de links */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  /* Zet hier je gewenste kleur voor de tekst */
+  font-size: 20px;
+  /* Stel de grootte van de tekst in */
+  font-weight: bold;
+  /* Je kunt dit aanpassen voor dikker lettertype */
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #0056b3;
+  /* Kleur veranderen bij hover */
+}
+
+/* Zorg ervoor dat het logo kleiner wordt */
+.logo img {
+  max-width: 90px;
+  /* Stel de maximale breedte van het logo in (je kunt de waarde aanpassen naar wens) */
+  height: auto;
+  /* Zorg ervoor dat de hoogte proportioneel is */
+  display: block;
+  /* Verwijdert eventuele ruimte onder het plaatje */
+}
+
+/* Zorg ervoor dat de logo container naar links wordt gepositioneerd */
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  /* Zorg ervoor dat het logo links blijft */
+  align-items: center;
+  width: 200px;
+  /* Geef het logo een vaste breedte zodat het aan de linkerkant blijft */
+}
+
+/* Zorg ervoor dat het logo kleiner wordt */
+.winkel img {
+  max-width: 50px;
+  /* Stel de maximale breedte van het logo in (je kunt de waarde aanpassen naar wens) */
+  height: auto;
+  /* Zorg ervoor dat de hoogte proportioneel is */
+  display: block;
+  /* Verwijdert eventuele ruimte onder het plaatje */
+}
+
+/* Zorg ervoor dat logo naar links wordt gepositioneerd */
+.winkel {
+  display: flex;
+  justify-content: flex-end;
+  /* Verplaatst naar de rechterkant */
+  align-items: center;
+  /* Zorg ervoor dat de afbeelding verticaal gecentreerd is */
+  position: absolute;
+  right: 10px;
+  /* Zet de container helemaal naar de rechterkant van de parent */
+  top: 50%;
+  transform: translateY(-50%);
+  /*lijn code van internet afgehaald, omdat niks werkte en in de foto niet aan de rechterkant kreeg*/
+}
+
+.bolletje {
+  color: white;
+  justify-content: center;
+  display: flex;
+  /*de bovenste 3 regels code zijn voor het stijlen van de cijfers in het bolletje*/
+  width: 20px;
+  /* Grootte van het bolletje */
+  height: 20px;
+  /* Grootte van het bolletje */
+  border-radius: 50%;
+  /* Maakt het bolletje rond */
+  background-color: rgb(223, 0, 0);
+  /* Kleur van het bolletje */
+  position: absolute;
+  /* Absolute positionering */
+  right: 0;
+  /* Plaatst het bolletje aan de rechterkant van het scherm */
+  top: 25%;
+  /* Verticaal centreren */
+  transform: translateY(-50%);
+  /* Corrigeert de positie zodat het bolletje perfect in het midden zit */
+}
+
+
+.search-container {
+  display: flex;
+  width: 100%;
+  box-shadow: 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+  flex-grow: 1;
+  /* Zorgt ervoor dat de input de beschikbare ruimte opvult */
+  height: 20px;
+  /* Dit maakt de zoekbalk verticaal dun */
+}
+
+.search-input:focus {
+  border-color: #007BFF;
+}
+
+.search-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: center;
+  /* Zorg ervoor dat de knop dezelfde hoogte heeft als de input */
+}
+
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/*Hieronder staat alles wat zich in de main bevind tot en met de footer*/
+main {
+  background: rgb(255, 255, 255);
+  /*kleur achtergrond van webshop*/
+  display: flex;
+  flex-direction: row;
+}
+
+.lijn {
+  margin: 20px;
+  width: 100%;
+}
+
+.lijnen {
+  border: 1px solid black;
+  width: 100%;
+
+}
+
+#products {
+  /*zorgt dat de producten netjes naast elkaar komen te staan en als er geen ruimte meer is dat hij eronder komt te staan*/
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.product {
+  width: 185px;
+  background-color: rgb(255, 255, 255);
+  /*Boarder rondom mijn product*/
+  border-radius: 20px;
+  margin: 6px;
+  padding: 10px;
+  /*zorgt dat het product niet tegen de rand aan staat maar dat er genoeg ruimte rondom het product is*/
+  display: flex;
+  flex-direction: column;
+}
+
+.onder {
+  display: flex;
+  flex-direction: row;
+}
+
+.onderlinks {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  /*in deze box staat de informatie van het item. Hierin staat de naam van mijn sportlegging en de prijs*/
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.onderrechts {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  /*dit is de box waar de button winkerwagen staat*/
+  justify-content: center;
+  /*midden horizontaal*/
+  align-items: center;
+  /*midden vertikaal*/
+}
+
+.product img {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(45, 76, 113);
+  /*plek waar de foto komt te staan van mijn product*/
+}
+
+body {
+  background-color: rgb(255, 255, 255) !important; /* Witte achtergrond */
+}
+
+#sidebar {
+  background-color: rgb(228, 228, 228) !important; /* Grijze sidebar */
+}
+
+#content {
+  width: 829px;
+}
+
+  #content {
+    width: 600px;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  @media only screen and (max-width: 840px) {
+    
+  }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(255, 255, 255);
+    /*kleur zie je niet op scherm*/
+  }
+
+  #content {
+    width: 400px;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .product {
+    width: 400px !important;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+/*Hieronder vind je alles in de footer*/
+footer {
+  background: rgb(213, 225, 255);
+  padding: 10px;
+  width: 100%;
+  /* Zorg ervoor dat de footer zelf 100% breedte heeft */
+  box-sizing: border-box;
+  display: flex;
+  /* Zorg ervoor dat padding wordt meegerekend in de totale breedte */
+}
+
+.bovenkant {
+  margin: 0;
+  /* Verwijder eventueel marge */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  ;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.betalen,
+.informatie,
+.klanten {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Zorg ervoor dat de items in de columns ook gecentreerd zijn */
+  align-items: center;
+  flex: 1;
+}
+
+.onderkant {
+  background-color: rgb(163, 180, 248);
+  padding: 10px;
+  /*ruimte rondom*/
+}
+
+/* Media query voor kleinere schermen (zoals telefoons) */
+@media screen and (max-width: 768px) {
+  .bovenkant {
+    flex-direction: column;
+    /* Zet de items onder elkaar */
+    align-items: center;
+    /* Centreert de items verticaal */
+  }
+
+  .betalen,
+  .informatie,
+  .klanten {
+    padding: 15px;
+    width: 80%;
+    /* Zorg ervoor dat de inhoud niet te breed is */
+  }
+}
+
+/*Hieronder vind je alles voor de sidebar*/
+#sidebar {
+  width: 178px;
+  background: rgb(228, 228, 228);
+  /*kleur linker zijkant navigatie bar*/
+}
+
+.prijzen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prijslaag {
+  justify-content: left;
+}
+
+.prijshoog {
+  justify-content: right;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  cursor: pointer;
+  /*slider met behulp van w3schools*/
+}
+
+.Doosjes {
+  padding: 10px;
+  margin: 20px;
+  border-style: solid;
+  border-color: black;
+}
+
+#products {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  /*kleur main*/
+}
+
+.prijsslider {
+  width: 115px;
+}
+
+/*hieronder komt alles voor het bestel formulier*/
+
+.gegevens {
+  padding: 20px;
+  margin: 20px;
+}
+
+.aanhef {
+  display: flex;
+  justify-content: space-between;
+  /* Verdeel de ruimte gelijkmatig tussen de items */
+  align-items: center;
+  /* Zorg dat de items verticaal gecentreerd zijn */
+}
+
+.aanhef input {
+  margin-left: 20px;
+  /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
+}
+
+.aanhef label {
+  margin-left: 5px;
+  /* Optionele marge voor de labels */
+}
+
+.small-input {
+  width: 150px;
+  /* De breedte van het inputveld */
+  padding: 5px;
+  /* De ruimte binnenin het inputveld */
+  font-size: 14px;
+  /* De grootte van de tekst */
+  border: 1px solid #ccc;
+  /* Een lichte rand */
+  border-radius: 4px;
+  /* Ronde hoeken voor het inputveld */
+}
+
+.wonen {
+  display: flex;
+  /* Verdeel de ruimte gelijkmatig tussen de items */
+  align-items: center;
+  /* Zorg dat de items verticaal gecentreerd zijn */
+}
+
+.wonen input {
+  margin-left: 20px;
+  /* Optionele marge om ruimte tussen de checkbox en het label te creëren */
+}
+
+.wonen label {
+  margin-left: 5px;
+  /* Optionele marge voor de labels */
+}
+
+.land {
+  padding: 2px;
+  margin: 6px;
+  border-radius: 2px;
+  width: 160px;
+  height: 22px;
+  border: 1px solid #a2a2a2
+}
+
+.mail {
+  padding: 6px;
+  width: 160px;
+}
+
+.verzenden {
+  padding: 6px;
+  border-radius: 2px;
+  width: 100px;
+  border: 1px solid #000000
+}
+
+.gegeven {
+  margin: 20px;
+  padding: 20px;
+}

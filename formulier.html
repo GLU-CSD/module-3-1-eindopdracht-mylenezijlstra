@@ -23,8 +23,8 @@
 
 
     <style>
-        .doorhalen {
-            text-decoration: line-through;
+        body {
+            background-color: white;
         }
     </style>
     <!--style zodat de voorgaande prijs doorgestreept is en je ziet dat dat de oude prijs was-->
@@ -54,9 +54,9 @@
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i> <!-- Hamburger icoon -->
                     </a>
-                    <a href="formulier.html">inloggen</a>
+                    <a href="formulier.html">login</a>
                     <a href="formulier.html">registeren</a>
-                    <a href="resultaat.html">mijn gegevens</a>
+                    <a href="resultaat.php">mijn gegevens</a>
                     <!-- Hamburger icoon dat zichtbaar wordt op kleine schermen -->
                 </div>
             </div>
@@ -98,7 +98,7 @@
 
         <main>
 
-            <form action="resultaat.html" name="mijnFormulier" onsubmit="return validateForm()">
+            <form action="resultaat.php" method="GET" name="mijnFormulier" onsubmit="return validateForm()">
 
                 <div class="gegevens">
                     <h2>Vul hier uw gegevens in</h2> <br>
@@ -121,7 +121,7 @@
 
                     <div class="wonen">
                         voornaam
-                        <input type="text" id="voornaam" name="voornaam" placeholder="voornaam" onfocus="resetForm();">
+                        <input type="text" id="voornaam" name="voornaam" placeholder="voornaam" onfocus="resetForm();" value="test">
 
                         <div id="alertBijNaam" style="color: red"></div>
                     </div> <br>
@@ -132,7 +132,7 @@
 
                     <div class="wonen">
                         Achternaam
-                        <input type="text" id="achternaam" name="achternaam" placeholder="achternaam"
+                        <input type="text" id="achternaam" name="achternaam" placeholder="achternaam" value="test"
                             onfocus="resetForm();">
 
                         <div id="alertAchterNaam" style="color: red"></div>
@@ -144,7 +144,7 @@
 
                     <div class="wonen">
                         Huisnummer
-                        <input type="text" id="Huisnummer" name="Huisnummer" placeholder="12" onfocus="resetForm();">
+                        <input type="number" id="huisnummer" name="huisnummer" placeholder="12" onfocus="resetForm();" value="12">
 
                         <div id="alertBijhuisnmr" style="color: red"></div>
                     </div> <br>
@@ -152,7 +152,7 @@
 
                     <div class="wonen">
                         Straatnaam 
-                        <input type="text" id="toev" name="toev" placeholder="straatnaam" onfocus="resetForm();">
+                        <input type="text" id="toev" name="straatnaam" placeholder="straatnaam" onfocus="resetForm();" value="test">
 
                         <div id="alertBijToev" style="color: red"></div>
                     </div><br>
@@ -162,7 +162,7 @@
                     <div class="wonen">
                         Postcode
 
-                        <input type="text" id="postcode" name="postcode" placeholder="1234AB" onfocus="resetForm();">
+                        <input type="text" id="postcode" name="postcode" placeholder="1234AB" onfocus="resetForm();" value="test">
 
                         <div id="alertBijPostcode" style="color: red"></div>
 
@@ -171,7 +171,7 @@
 
                     <div class="wonen">
                         Land
-                        <select class="land" name="Land" id="Land">
+                        <select class="land" name="land" id="Land">
                             <option value="Nederlands">Nederland</option>
                             <!--verschillende talen voor de website-->
                             <option value="Duits">Duitsland</option>
@@ -184,7 +184,7 @@
 
                     <div class="wonen">
                         E-mail
-                        <input type="email" id="email" name="email" placeholder="email" onfocus="resetForm();">
+                        <input type="email" id="email" name="email" placeholder="email" onfocus="resetForm();" value="test@test.test">
 
                         <div id="alertBijEmail" style="color: red"></div>
 
@@ -194,8 +194,8 @@
 
                     <div class="wonen">
                         Telefoonnummer
-                        <input type="tel" id="Telefoonnummer" name="Telefoonnummer" placeholder="(06)"
-                            onfocus="resetForm();">
+                        <input type="tel" id="Telefoonnummer" name="telefoonnummer" placeholder="(06)"
+                            onfocus="resetForm();" value="test">
 
                         <div id="alertBijTelefoon" style="color: red"></div>
 
@@ -205,7 +205,7 @@
                     <div class="wonen">
                         Geboortedatum
 
-                        <input type="text" id="Datum" name="Datum" placeholder="dd-mm-jjjj" onfocus="resetForm();">
+                        <input type="text" id="datum" name="datum" placeholder="dd-mm-jjjj" onfocus="resetForm();" value="test">
                         <!--Ik wilde ipmut type date gebruikt maar die kwam niet door de W3C validator heen. 
                         Dit komt omdat date niet ondersteunt word in safari en andere. 
                         Omdat ik altijd safari gebruik heb ik ervoor gekozen om date niet te gebruiken 

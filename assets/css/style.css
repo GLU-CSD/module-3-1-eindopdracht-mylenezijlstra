@@ -1,3 +1,5 @@
+/* test */
+
 * {
   padding: 0;
   margin: 0;
@@ -344,6 +346,24 @@ main {
   width: 829px;
 }
 
+
+
+@media only screen and (max-width: 412px) {
+  #sidebar {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #sidebar {
+    display: none !important;
+  }
+}
+
+
+
+
+
 @media only screen and (max-width: 840px) {
   body {
     background-color: rgb(201, 201, 213);
@@ -352,10 +372,6 @@ main {
 
   #content {
     width: 600px;
-  }
-
-  #sidebar {
-    display: none;
   }
 }
 
@@ -370,7 +386,11 @@ main {
   }
 
   #sidebar {
-    display: none;
+    display: block; /* Zorgt ervoor dat het zichtbaar blijft */
+    width: 250px; /* Zorg dat de sidebar een breedte heeft */
+    min-height: 100vh; /* Laat het de volledige hoogte van het scherm innemen */
+    background-color: lightgray; /* Voeg een achtergrondkleur toe om te controleren */
+    border: 1px solid black; /
   }
 
   .product {

@@ -42,16 +42,16 @@ function resetForm() {
 
 function validateForm() {
 
-  function validateForm() {
+
     // Haal de geselecteerde aanhef op
     let aanhef = document.querySelector('input[name="aanhef"]:checked').value;
 
     // Voeg de aanhef toe aan de querystring voor de resultpagina
     let form = document.forms["mijnFormulier"];
-    form.action = "resultaat.html?aanhef=" + aanhef + "&" + new URLSearchParams(new FormData(form)).toString();
+    form.action = "resultaat.php?aanhef=" + aanhef + "&" + new URLSearchParams(new FormData(form)).toString();
 
-    return true;  // Verzendt het formulier
-  }
+//    return true;  // Verzendt het formulier
+//  }
 
   console.log("validateForm");
   ///---------
@@ -73,8 +73,8 @@ function validateForm() {
   }
 
   ///---------
-  let Huisnummer = document.forms["mijnFormulier"]["Huisnummer"].value;
-  if (Huisnummer == "") {
+  let huisnummer = document.forms["mijnFormulier"]["huisnummer"].value;
+  if (huisnummer == "") {
     //alert("Name must be filled out");
     document.getElementById("alertBijhuisnmr").innerHTML =
       "Huisnummer moet ingevuld worden.";
@@ -82,8 +82,8 @@ function validateForm() {
   }
 
   ///---------
-  let toev = document.forms["mijnFormulier"]["toev"].value;
-  if (toev == "") {
+  let straatnaam = document.forms["mijnFormulier"]["straatnaam"].value;
+  if (straatnaam == "") {
     //alert("Name must be filled out");
     document.getElementById("alertBijToev").innerHTML =
       "Toev. moet ingevuld worden.";
@@ -112,8 +112,8 @@ function validateForm() {
   }
 
   ///---------
-  let Telefoonnummer = document.forms["mijnFormulier"]["Telefoonnummer"].value;
-  if (Telefoonnummer == "") {
+  let telefoonnummer = document.forms["mijnFormulier"]["telefoonnummer"].value;
+  if (telefoonnummer == "") {
     //alert("Name must be filled out");
     document.getElementById("alertBijTelefoon").innerHTML =
       "Telefoonnummer moet ingevuld worden.";
@@ -122,8 +122,8 @@ function validateForm() {
   }
 
   ///---------
-  let Datum = document.forms["mijnFormulier"]["Datum"].value;
-  if (Datum == "") {
+  let datum = document.forms["mijnFormulier"]["datum"].value;
+  if (datum == "") {
     //alert("Name must be filled out");
     document.getElementById("alertBijDatum").innerHTML =
       "Datum moet ingevuld worden.";
@@ -150,13 +150,15 @@ let aanhef = url.searchParams.get("aanhef");
 let voornaam = url.searchParams.get("voornaam");
 let tussenv = url.searchParams.get("tussenv");
 let achternaam = url.searchParams.get("achternaam");
-let Huisnummer = url.searchParams.get("Huisnummer");
-let toev = url.searchParams.get("Straatnaam");
-let postcode = url.searchParams.get("Postcode");
-let Telefoonnummer = url.searchParams.get("Telefoonnummer");
+let huisnummer = url.searchParams.get("huisnummer");
+let straatnaam = url.searchParams.get("straatnaam");
+let postcode = url.searchParams.get("postcode");
+let telefoonnummer = url.searchParams.get("telefoonnummer");
 let email = url.searchParams.get("email");
-let Datum = url.searchParams.get("Datum");
-let land = url.searchParams.get("Land");
+let datum = url.searchParams.get("datum");
+let land = url.searchParams.get("land");
+
+
 
 // Vul de inhoud van het element met ID "resultaat" in
 document.getElementById("resultaat").innerHTML =
@@ -165,15 +167,13 @@ document.getElementById("resultaat").innerHTML =
   "<br><br>Voornaam: " + voornaam +
   "<br><br>Tussenvoegsel: " + tussenv +
   "<br><br>Achternaam: " + achternaam +
-  "<br><br>Huisnummer: " + Huisnummer +
-  "<br><br>Straatnaam: " + toev +
+  "<br><br>Huisnummer: " + huisnummer +
+  "<br><br>Straatnaam: " + straatnaam +
   "<br><br>Postcode: " + postcode +
   "<br><br>Land: " + land +
   "<br><br>Email: " + email +
-  "<br><br>Telefoonnummer: " + Telefoonnummer +
-  "<br><br>Geboortedatum: " + Datum;
+  "<br><br>Telefoonnummer: " + telefoonnummer +
+  "<br><br>Geboortedatum: " + datum;
   //zorgen ervoor dat alle gegevens onder elkaar komen te staan
 
 //js voor resultaat
-
-
